@@ -287,6 +287,9 @@ const Header = () => {
                 box-shadow: 0 10px 40px rgba(0,0,0,0.4);
                 border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             }
+            .navbar-h.is-home:not(.scrolled) .navbar-logo-h {
+                display: none;
+            }
             .nav-links-h { display: none !important; }
             .mobile-toggle-h { 
                 display: block !important; 
@@ -302,7 +305,7 @@ const Header = () => {
         }
       `}</style>
 
-      <nav className={`navbar-h ${scrolled ? 'scrolled' : ''}`} id="main-nav-h">
+      <nav className={`navbar-h ${scrolled ? 'scrolled' : ''} ${location.pathname === '/' ? 'is-home' : ''}`} id="main-nav-h">
         <div className="navbar-logo-h">
           <Link to="/">
             <img src="/assets/logo2.png" alt="Sam Agri" onError={(e) => { e.target.src = 'https://via.placeholder.com/120x40?text=SAM+AGRI' }} />

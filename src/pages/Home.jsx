@@ -564,7 +564,7 @@ const Home = () => {
       <section id="global-presence" className="bg-white pt-3 pb-4 md:pt-4 md:pb-6 px-6 md:px-12 overflow-hidden">
         <div className="max-w-screen-2xl mx-auto relative w-full">
           {/* Section Header */}
-          <div className="mb-6 md:mb-8 flex flex-col md:flex-row items-start md:items-end justify-between gap-6 border-b border-zinc-100 pb-4">
+          <div className="mb-6 md:mb-8 flex flex-col md:flex-row items-start md:items-end justify-between gap-6 pb-4">
             <div>
               <h2 className="text-4xl md:text-6xl font-serif font-black text-primary uppercase leading-none">
                 Global{" "}<span className="text-secondary">Presence</span>
@@ -604,7 +604,7 @@ const Home = () => {
       </section>
 
       {/* 3. Our Assortment */}
-      <section id="produce" className="bg-black pt-3 pb-8 md:pt-4 md:pb-12 lg:pt-4 lg:pb-20 px-6 md:px-12 overflow-hidden">
+      <section id="produce" className="snap-section bg-black py-4 md:py-8 lg:py-12 px-6 md:px-12 flex flex-col justify-center overflow-hidden">
         <div className="max-w-screen-2xl mx-auto relative w-full">
           <div className="mb-4 md:mb-6 flex flex-col md:flex-row items-start md:items-end justify-between gap-6">
             <div>
@@ -614,8 +614,8 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border border-white/10 lg:h-[480px]">
-            <Link to="/pomegranate-arils" className="relative group lg:row-span-2 overflow-hidden h-[380px] lg:h-auto border-b lg:border-b-0 lg:border-r border-white/10">
+          <div className="flex lg:grid lg:grid-cols-4 gap-4 lg:gap-0 border border-white/10 h-[55vh] lg:h-[60vh] overflow-x-auto lg:overflow-visible pb-4 lg:pb-0 scrollbar-none">
+            <Link to="/pomegranate-arils" className="relative group flex-shrink-0 w-[75vw] sm:w-[45vw] h-full lg:w-auto lg:h-auto lg:row-span-2 overflow-hidden border border-white/10 lg:border-0 lg:border-b lg:border-r border-white/10">
               <img src="/arils_3d.png" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Pomegranate Arils" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -625,7 +625,7 @@ const Home = () => {
               </div>
             </Link>
  
-            <Link to="/coconut-chunks" className="relative group overflow-hidden h-[240px] border-b md:r-r lg:border-r border-white/10">
+            <Link to="/coconut-chunks" className="relative group flex-shrink-0 w-[75vw] sm:w-[45vw] h-full lg:w-auto lg:h-auto overflow-hidden border border-white/10 lg:border-0 lg:border-b lg:border-r border-white/10">
               <img src="/coconut_3d.png" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Coconut Chunks" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -635,7 +635,7 @@ const Home = () => {
               </div>
             </Link>
  
-            <Link to="/whole-fruit" className="relative group overflow-hidden h-[240px] border-b lg:border-r border-white/10">
+            <Link to="/whole-fruit" className="relative group flex-shrink-0 w-[75vw] sm:w-[45vw] h-full lg:w-auto lg:h-auto overflow-hidden border border-white/10 lg:border-0 lg:border-b lg:border-r border-white/10">
               <img src="/pomegranate_3d.png" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Whole Fruit" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -645,7 +645,7 @@ const Home = () => {
               </div>
             </Link>
  
-            <Link to="#" className="relative group overflow-hidden h-[240px] border-b border-white/10">
+            <Link to="#" className="relative group flex-shrink-0 w-[75vw] sm:w-[45vw] h-full lg:w-auto lg:h-auto overflow-hidden border border-white/10 lg:border-0 lg:border-b border-white/10">
               <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?q=80&w=800" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Frozen Juice" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -655,7 +655,7 @@ const Home = () => {
               </div>
             </Link>
  
-            <Link to="/dried-arils" className="relative group overflow-hidden h-[240px] border-b md:border-b-0 md:border-r border-white/10">
+            <Link to="/dried-arils" className="relative group flex-shrink-0 w-[75vw] sm:w-[45vw] h-full lg:w-auto lg:h-auto overflow-hidden border border-white/10 lg:border-0 lg:border-b lg:border-r border-white/10">
               <img src="/assets/pomogranatearils.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Dried Arils" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -665,7 +665,7 @@ const Home = () => {
               </div>
             </Link>
  
-            <Link to="/iqf-arils" className="relative group overflow-hidden h-[240px] border-b md:border-b-0 lg:border-r border-white/10">
+            <Link to="/iqf-arils" className="relative group flex-shrink-0 w-[75vw] sm:w-[45vw] h-full lg:w-auto lg:h-auto overflow-hidden border border-white/10 lg:border-0 lg:border-b lg:border-r border-white/10">
               <img src="/assets/ivfarils.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="IQF Aril" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -675,7 +675,7 @@ const Home = () => {
               </div>
             </Link>
  
-            <Link to="#" className="relative group overflow-hidden h-[240px] border-b md:border-b-0 border-white/10">
+            <Link to="#" className="relative group flex-shrink-0 w-[75vw] sm:w-[45vw] h-full lg:w-auto lg:h-auto overflow-hidden border border-white/10 lg:border-0 lg:border-b border-white/10">
               <img src="/assets/pomogranatewine.png" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Wines" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -689,7 +689,7 @@ const Home = () => {
       </section>
 
       {/* 5. Domestic Presence */}
-      <section id="domestic" className="bg-[#0a0a0a] pt-3 pb-8 md:pt-4 md:pb-12 lg:pt-4 lg:pb-12 px-6 md:px-12 overflow-hidden">
+      <section id="domestic" className="snap-section bg-[#0a0a0a] py-4 md:py-8 lg:py-12 px-6 md:px-12 flex flex-col justify-center overflow-hidden">
         <div className="max-w-screen-2xl mx-auto relative w-full">
           <div className="mb-4 md:mb-6 flex flex-col md:flex-row items-start md:items-end justify-between gap-6">
             <div>
@@ -699,8 +699,8 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Mobile view: Simple wrapping flex layout */}
-          <div className="flex flex-wrap justify-center gap-x-6 gap-y-8 mt-8 w-full lg:hidden">
+          {/* Mobile view: Simple wrapping flex layout with compact sizing */}
+          <div className="flex flex-wrap justify-center gap-x-4 gap-y-4 sm:gap-x-6 sm:gap-y-6 mt-4 w-full lg:hidden">
             {[
               { name: "West-In-Avo", img: "/assets/avocado.jpg", link: "/west-in-avo" },
               { name: "Sam Berry", img: "/assets/sam_berry_basket.png", link: "#" },
@@ -710,10 +710,10 @@ const Home = () => {
               { name: "Sam's Wine", img: "/assets/pomogranatewine.png", link: "#" },
               { name: "SIDVIN", img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800", link: "#" }
             ].map((item) => (
-              <Link to={item.link} key={item.name} className="group flex flex-col items-center gap-2 w-[140px] sm:w-[180px]">
+              <Link to={item.link} key={item.name} className="group flex flex-col items-center gap-1 w-[100px] sm:w-[140px]">
                 {/* Hexagon border wrapper */}
                 <div
-                  className="w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center transition-all duration-300 group-hover:scale-105"
+                  className="w-24 h-24 sm:w-32 sm:h-32 flex items-center justify-center transition-all duration-300 group-hover:scale-105"
                   style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)', background: 'rgba(255,255,255,0.15)' }}
                 >
                   {/* Hexagon image inner */}
@@ -724,15 +724,15 @@ const Home = () => {
                     <img src={item.img} className="w-full h-full object-cover" alt={item.name} />
                   </div>
                 </div>
-                <div className="text-center w-full transition-all duration-300 mt-2">
-                  <span className="text-white/90 font-sans font-bold text-xs sm:text-sm tracking-wide uppercase group-hover:text-[#9ef295] transition-colors">{item.name}</span>
+                <div className="text-center w-full transition-all duration-300 mt-1">
+                  <span className="text-white font-sans font-black text-xs sm:text-sm tracking-wide uppercase group-hover:text-[#9ef295] transition-colors">{item.name}</span>
                 </div>
               </Link>
             ))}
           </div>
 
           {/* Desktop view: Offset honeycomb grid */}
-          <div className="hidden lg:grid grid-cols-8 gap-y-0 mt-8 w-full">
+          <div className="hidden lg:grid grid-cols-8 gap-y-0 mt-6 w-full">
             {/* Top Row: 4 Items — each takes 2 of 8 columns */}
             {[
               { name: "West-In-Avo", img: "/assets/avocado.jpg", link: "/west-in-avo" },
@@ -740,10 +740,10 @@ const Home = () => {
               { name: "Sam's Delight", img: "/assets/almond.jpg", link: "#" },
               { name: "Sam Alpine", img: "https://images.unsplash.com/photo-1498557850523-fd3d118b962e?q=80&w=800", link: "#" }
             ].map((item) => (
-              <Link to={item.link} key={item.name} className="group col-span-2 flex flex-col items-center gap-2 lg:-mt-4 xl:-mt-6">
+              <Link to={item.link} key={item.name} className="group col-span-2 flex flex-col items-center gap-1 lg:-mt-2 xl:-mt-4">
                 {/* Hexagon border wrapper */}
                 <div
-                  className="lg:w-48 lg:h-56 xl:w-52 xl:h-60 flex items-center justify-center transition-all duration-300 group-hover:scale-105"
+                  className="lg:w-36 lg:h-40 xl:w-44 xl:h-48 flex items-center justify-center transition-all duration-300 group-hover:scale-105"
                   style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)', background: 'rgba(255,255,255,0.15)' }}
                 >
                   {/* Hexagon image inner */}
@@ -754,23 +754,23 @@ const Home = () => {
                     <img src={item.img} className="w-full h-full object-cover" alt={item.name} />
                   </div>
                 </div>
-                <div className="text-center min-w-[110px] sm:min-w-[130px] md:min-w-[150px] transition-all duration-300 mt-2">
-                  <span className="text-white/90 font-sans font-bold text-xs md:text-sm tracking-wide uppercase group-hover:text-[#9ef295] transition-colors">{item.name}</span>
+                <div className="text-center min-w-[110px] sm:min-w-[130px] md:min-w-[150px] transition-all duration-300 mt-1">
+                  <span className="text-white font-sans font-black text-sm md:text-base tracking-wide uppercase group-hover:text-[#9ef295] transition-colors">{item.name}</span>
                 </div>
               </Link>
             ))}
 
             {/* Bottom Row: 3 Items — offset by 1 col to sit between top items */}
-            <div className="col-span-1 hidden lg:block lg:-mt-12 xl:-mt-16" />
+            <div className="col-span-1 hidden lg:block lg:-mt-8 xl:-mt-10" />
             {[
               { name: "Ozar Tulip", img: "/assets/tulip.jpg", link: "#" },
               { name: "Sam's Wine", img: "/assets/pomogranatewine.png", link: "#" },
               { name: "SIDVIN", img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800", link: "#" }
             ].map((item) => (
-              <Link to={item.link} key={item.name} className="group col-span-2 flex flex-col items-center gap-2 lg:-mt-12 xl:-mt-16">
+              <Link to={item.link} key={item.name} className="group col-span-2 flex flex-col items-center gap-1 lg:-mt-8 xl:-mt-10">
                 {/* Hexagon border wrapper */}
                 <div
-                  className="lg:w-48 lg:h-56 xl:w-52 xl:h-60 flex items-center justify-center transition-all duration-300 group-hover:scale-105"
+                  className="lg:w-36 lg:h-40 xl:w-44 xl:h-48 flex items-center justify-center transition-all duration-300 group-hover:scale-105"
                   style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)', background: 'rgba(255,255,255,0.15)' }}
                 >
                   {/* Hexagon image inner */}
@@ -781,8 +781,8 @@ const Home = () => {
                     <img src={item.img} className="w-full h-full object-cover" alt={item.name} />
                   </div>
                 </div>
-                <div className="text-center min-w-[110px] sm:min-w-[130px] md:min-w-[150px] transition-all duration-300 mt-2">
-                  <span className="text-white/90 font-sans font-bold text-xs md:text-sm tracking-wide uppercase group-hover:text-[#9ef295] transition-colors">{item.name}</span>
+                <div className="text-center min-w-[110px] sm:min-w-[130px] md:min-w-[150px] transition-all duration-300 mt-1">
+                  <span className="text-white font-sans font-black text-sm md:text-base tracking-wide uppercase group-hover:text-[#9ef295] transition-colors">{item.name}</span>
                 </div>
               </Link>
             ))}

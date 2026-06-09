@@ -6,7 +6,7 @@ const Infrastructure = () => {
       {/* Hero */}
       <section className="relative py-16 md:py-32 px-6 md:px-12 bg-zinc-950 text-white overflow-hidden pt-32">
         <div className="absolute inset-0 opacity-25">
-          <img src="/assets/infrastructure_facility.png" className="w-full h-full object-cover" alt="Infrastructure" onError={(e) => { e.target.src = 'https://via.placeholder.com/1200x500?text=Infrastructure' }} />
+          <img src="/assets/nashik_facility.png" className="w-full h-full object-cover" alt="Infrastructure" onError={(e) => { e.target.src = 'https://via.placeholder.com/1200x500?text=Infrastructure' }} />
         </div>
         <div className="max-w-7xl mx-auto relative z-10 text-center">
           <h1 className="text-3xl md:text-6xl lg:text-7xl font-serif font-bold uppercase tracking-tighter mb-6 md:mb-8">Integrated <span className="text-[#9ef295]">Facilities</span></h1>
@@ -33,14 +33,14 @@ const Infrastructure = () => {
               </ul>
             </div>
             <div className="rounded-3xl md:rounded-[3rem] overflow-hidden shadow-2xl order-1 md:order-2 border border-zinc-200">
-              <img src="/assets/infrastructure_facility.png" className="w-full h-auto" alt="Nashik Facility" onError={(e) => { e.target.src = 'https://via.placeholder.com/600x400?text=Nashik+Facility' }} />
+              <img src="/assets/nashik_facility.png" className="w-full h-auto" alt="Nashik Facility" onError={(e) => { e.target.src = 'https://via.placeholder.com/600x400?text=Nashik+Facility' }} />
             </div>
           </div>
 
           {/* Hyderabad */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
             <div className="rounded-3xl md:rounded-[3rem] overflow-hidden shadow-2xl border border-zinc-200">
-              <img src="/farm_3d.png" className="w-full h-auto" alt="Hyderabad Facility" onError={(e) => { e.target.src = 'https://via.placeholder.com/600x400?text=Hyderabad+Facility' }} />
+              <img src="/assets/hyderabad_tech.png" className="w-full h-auto" alt="Hyderabad Facility" onError={(e) => { e.target.src = 'https://via.placeholder.com/600x400?text=Hyderabad+Facility' }} />
             </div>
             <div className="space-y-8 md:space-y-12">
               <h2 className="text-2xl md:text-4xl font-serif font-bold text-primary uppercase tracking-tighter">Hyderabad <br /><span className="text-secondary">Tech Center</span></h2>
