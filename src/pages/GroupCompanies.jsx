@@ -2,17 +2,17 @@ import React from 'react'
 
 const GroupCompanies = () => {
   return (
-    <main className="min-h-screen text-white selection:bg-[#7e1a12] selection:text-white" style={{ background: 'linear-gradient(to bottom, #4a0a05 0%, #1a0a0a 100%)', backgroundAttachment: 'fixed' }}>
+    <main className="min-h-screen text-white selection:bg-[#0d631b] selection:text-white bg-[#0f0f0f]">
       {/* Dynamic Brand Portfolio */}
       <section className="py-20 md:py-24 px-6 md:px-12 relative overflow-hidden">
         {/* Background Decoration (Glow) */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-[#7e1a12]/30 blur-[150px] rounded-full -mt-24 pointer-events-none"></div>
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-[#0d631b]/20 blur-[150px] rounded-full -mt-24 pointer-events-none"></div>
         
         <div className="max-w-4xl mx-auto animate-in relative z-10 text-center">
           <span className="font-display font-bold text-[#9ef295] uppercase tracking-[0.5em] text-[10px] mb-8 inline-block bg-white/5 px-6 py-2 rounded-full border border-white/10">The Sam Agri Group</span>
-          <h1 className="text-4xl md:text-7xl lg:text-8xl font-serif font-bold text-white uppercase tracking-tighter mb-10 leading-[0.8]">GROUP <br /><span className="text-[#7e1a12]">ENTITIES</span></h1>
+          <h1 className="text-4xl md:text-7xl lg:text-8xl font-serif font-bold text-white uppercase tracking-tighter mb-10 leading-[0.8]">GROUP <br /><span className="text-[#9ef295]">ENTITIES</span></h1>
           <p className="text-base md:text-lg text-white/70 font-medium leading-relaxed max-w-2xl mx-auto">
-            A diversified conglomerate of specialized legal entities, each driving innovation and excellence across the global fresh produce supply chain.
+             A diversified conglomerate of specialized legal entities, each driving innovation and excellence across the global fresh produce supply chain.
           </p>
         </div>
       </section>
@@ -25,7 +25,7 @@ const GroupCompanies = () => {
             {/* Sam Agritech Limited */}
             <div className="group relative aspect-square rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl border border-white/10 transition-all duration-700 hover:-translate-y-2">
               <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2000" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale group-hover:grayscale-0" alt="Sam Agritech" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#4a0a05] via-[#4a0a05]/40 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
               <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end">
                 <span className="text-[#9ef295] font-bold text-[10px] uppercase tracking-widest mb-2">Medchal, Telangana</span>
                 <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4 leading-tight">Sam Agritech <br />Limited</h3>
@@ -36,7 +36,7 @@ const GroupCompanies = () => {
             {/* Sam Agri Ventures Ltd */}
             <div className="group relative aspect-square rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl border border-white/10 transition-all duration-700 hover:-translate-y-2">
               <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=2000" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale group-hover:grayscale-0" alt="Sam Agri Ventures" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0d631b] via-[#0d631b]/40 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
               <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end">
                 <span className="text-[#9ef295] font-bold text-[10px] uppercase tracking-widest mb-2">Chittoor, Andhra Pradesh</span>
                 <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4 leading-tight">Sam Agri <br />Ventures Ltd</h3>
@@ -55,7 +55,7 @@ const GroupCompanies = () => {
             {/* Sam Agri Fresh Pvt Ltd */}
             <div className="group relative aspect-square rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl border border-white/10 transition-all duration-700 hover:-translate-y-2">
               <img src="https://images.unsplash.com/photo-1615485290382-441e4d019cb5?q=80&w=2000" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale group-hover:grayscale-0" alt="Sam Agri Fresh" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#7e1a12] via-[#7e1a12]/40 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
               <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end">
                 <span className="text-[#9ef295] font-bold text-[10px] uppercase tracking-widest mb-2">Nashik, Maharashtra</span>
                 <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4 leading-tight">Sam Agri <br />Fresh Pvt Ltd</h3>
