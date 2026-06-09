@@ -54,9 +54,9 @@ const ContactUs = () => {
 
       <main className="text-on-surface bg-[#faf9f5]">
         {/* Premium Contact Layout */}
-        <section className="min-h-[80vh] flex flex-col lg:flex-row pt-20 lg:pt-0">
+        <section className="min-h-screen flex flex-col lg:flex-row pt-0">
           {/* Left: Brand Info (Dark Red) */}
-          <div className="lg:w-[45%] bg-[#4a0a05] relative flex flex-col justify-center p-8 md:p-12 lg:p-20 overflow-hidden">
+          <div className="lg:w-[45%] bg-[#4a0a05] relative flex flex-col justify-start p-8 md:p-12 lg:p-20 pt-28 md:pt-32 lg:pt-36 pb-12 lg:pb-20 overflow-hidden">
             {/* Abstract Background */}
             <div className="absolute inset-0 opacity-20">
               <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2000" className="w-full h-full object-cover" alt="Background" />
@@ -110,7 +110,7 @@ const ContactUs = () => {
           </div>
 
           {/* Right: Contact Form (Clean Surface) */}
-          <div className="lg:w-[55%] bg-[#faf9f5] flex flex-col justify-center p-8 md:p-12 lg:p-20">
+          <div className="lg:w-[55%] bg-[#faf9f5] flex flex-col justify-start p-8 md:p-12 lg:p-20 pt-28 md:pt-32 lg:pt-36 pb-12 lg:pb-20">
             <div className="max-w-2xl w-full mx-auto animate-in">
               <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-3 md:mb-4 uppercase">ENQUIRY FORM</h2>
               <p className="text-on-surface-variant mb-8 md:mb-10 font-medium text-sm md:text-base">Please fill out the form below and our global team will contact you within 24 hours.</p>

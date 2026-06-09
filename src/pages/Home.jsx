@@ -95,7 +95,7 @@ const Home = () => {
 
     projection = d3.geoNaturalEarth1()
       .scale(W / 5.6)
-      .translate([W / 2, H / 2])
+      .translate([W / 2, H / 2 - 25])
 
     pathGen = d3.geoPath().projection(projection)
 
@@ -425,7 +425,7 @@ const Home = () => {
         svgRef.current.setAttribute('height', newH)
         projection = d3.geoNaturalEarth1()
           .scale(newW / 5.6)
-          .translate([newW / 2, newH / 2])
+          .translate([newW / 2, newH / 2 - 25])
         pathGen = d3.geoPath().projection(projection)
         drawMap(worldData)
         destIdx = 0
@@ -560,6 +560,49 @@ const Home = () => {
         </div>
       </section>
 
+      {/* 4. GLOBAL PRESENCE — Interactive D3 World Map */}
+      <section id="global-presence" className="bg-white pt-3 pb-4 md:pt-4 md:pb-6 px-6 md:px-12 overflow-hidden">
+        <div className="max-w-screen-2xl mx-auto relative w-full">
+          {/* Section Header */}
+          <div className="mb-6 md:mb-8 flex flex-col md:flex-row items-start md:items-end justify-between gap-6 border-b border-zinc-100 pb-4">
+            <div>
+              <h2 className="text-4xl md:text-6xl font-serif font-black text-primary uppercase leading-none">
+                Global{" "}<span className="text-secondary">Presence</span>
+              </h2>
+            </div>
+          </div>
+
+          {/* Map Canvas */}
+          <div id="gp-map-wrap" ref={wrapRef} className="relative w-full mb-0 overflow-hidden" style={{
+            height: '520px',
+            background: 'linear-gradient(160deg, #f8fafc 0%, #f1f5f9 100%)',
+            borderRadius: '2rem',
+            border: '2px solid #cbd5e1',
+            boxShadow: 'inset 0 2px 20px rgba(0,0,0,0.02), 0 10px 30px rgba(0,0,0,0.04)'
+          }}>
+            <svg id="gp-world-map" ref={svgRef} style={{ width: '100%', height: '100%', display: 'block' }}></svg>
+
+
+            {/* Flight Status (top-right) */}
+            <div id="gp-status-pill" className="absolute top-5 right-5 flex items-center gap-2 rounded-full px-4 py-2 z-20" style={{
+              background: 'rgba(255,255,255,0.8)',
+              border: '1px solid rgba(0,0,0,0.08)',
+              boxShadow: '0 4px 12px rgba(0,0,0,0.03)'
+            }}>
+              <span id="gp-status-dot" className="w-2 h-2 rounded-full" style={{ backgroundColor: isFlying ? '#f59e0b' : '#0d631b' }}></span>
+              <span id="gp-status-text" style={{ color: '#4b5563', fontSize: '9px', fontWeight: 700, letterSpacing: '0.25em', textTransform: 'uppercase' }}>{statusText}</span>
+            </div>
+
+            {/* Subtle grid overlay */}
+            <div className="absolute inset-0 pointer-events-none" style={{
+              backgroundImage: 'linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px)',
+              backgroundSize: '60px 60px',
+              borderRadius: '2rem'
+            }}></div>
+          </div>
+        </div>
+      </section>
+
       {/* 3. Our Assortment */}
       <section id="produce" className="bg-black pt-3 pb-8 md:pt-4 md:pb-12 lg:pt-4 lg:pb-20 px-6 md:px-12 overflow-hidden">
         <div className="max-w-screen-2xl mx-auto relative w-full">
@@ -641,49 +684,6 @@ const Home = () => {
                 </h4>
               </div>
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* 4. GLOBAL PRESENCE — Interactive D3 World Map */}
-      <section id="global-presence" className="bg-white pt-3 pb-4 md:pt-4 md:pb-6 px-6 md:px-12 overflow-hidden">
-        <div className="max-w-screen-2xl mx-auto relative w-full">
-          {/* Section Header */}
-          <div className="mb-6 md:mb-8 flex flex-col md:flex-row items-start md:items-end justify-between gap-6 border-b border-zinc-100 pb-4">
-            <div>
-              <h2 className="text-4xl md:text-6xl font-serif font-black text-primary uppercase leading-none">
-                Global{" "}<span className="text-secondary">Presence</span>
-              </h2>
-            </div>
-          </div>
-
-          {/* Map Canvas */}
-          <div id="gp-map-wrap" ref={wrapRef} className="relative w-full mb-0 overflow-hidden" style={{
-            height: '520px',
-            background: 'linear-gradient(160deg, #f8fafc 0%, #f1f5f9 100%)',
-            borderRadius: '2rem',
-            border: '2px solid #cbd5e1',
-            boxShadow: 'inset 0 2px 20px rgba(0,0,0,0.02), 0 10px 30px rgba(0,0,0,0.04)'
-          }}>
-            <svg id="gp-world-map" ref={svgRef} style={{ width: '100%', height: '100%', display: 'block' }}></svg>
-
-
-            {/* Flight Status (top-right) */}
-            <div id="gp-status-pill" className="absolute top-5 right-5 flex items-center gap-2 rounded-full px-4 py-2 z-20" style={{
-              background: 'rgba(255,255,255,0.8)',
-              border: '1px solid rgba(0,0,0,0.08)',
-              boxShadow: '0 4px 12px rgba(0,0,0,0.03)'
-            }}>
-              <span id="gp-status-dot" className="w-2 h-2 rounded-full" style={{ backgroundColor: isFlying ? '#f59e0b' : '#0d631b' }}></span>
-              <span id="gp-status-text" style={{ color: '#4b5563', fontSize: '9px', fontWeight: 700, letterSpacing: '0.25em', textTransform: 'uppercase' }}>{statusText}</span>
-            </div>
-
-            {/* Subtle grid overlay */}
-            <div className="absolute inset-0 pointer-events-none" style={{
-              backgroundImage: 'linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px)',
-              backgroundSize: '60px 60px',
-              borderRadius: '2rem'
-            }}></div>
           </div>
         </div>
       </section>
