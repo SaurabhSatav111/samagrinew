@@ -17,10 +17,10 @@ const GroupCompanies = () => {
         </div>
       </section>
 
-      {/* Processing & Infrastructure */}
-      <section className="pb-12 md:pb-20 px-6 md:px-12 relative z-10">
+      {/* Processing Entities */}
+      <section className="pb-12 md:pb-16 px-6 md:px-12 relative z-10">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-xl md:text-2xl font-serif text-white/50 uppercase tracking-[0.3em] mb-12 border-b border-white/10 pb-4">Processing & Infrastructure</h2>
+          <h2 className="text-xl md:text-2xl font-serif text-white/50 uppercase tracking-[0.3em] mb-12 border-b border-white/10 pb-4">Processing Entities</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {/* Sam Agritech Limited */}
             <div className="group relative aspect-square rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl border border-white/10 transition-all duration-700 hover:-translate-y-2">
@@ -43,7 +43,15 @@ const GroupCompanies = () => {
                 <p className="text-white/70 text-sm leading-relaxed group-hover:text-white transition-colors">Strategic processing facility located in the Srini Food Park.</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
+      {/* Infrastructure & Logistics */}
+      <section className="pb-12 md:pb-20 px-6 md:px-12 relative z-10">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-xl md:text-2xl font-serif text-white/50 uppercase tracking-[0.3em] mb-12 border-b border-white/10 pb-4">Infrastructure & Logistics</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {/* Sam Agri Fresh Pvt Ltd */}
             <div className="group relative aspect-square rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl border border-white/10 transition-all duration-700 hover:-translate-y-2">
               <img src="https://images.unsplash.com/photo-1615485290382-441e4d019cb5?q=80&w=2000" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale group-hover:grayscale-0" alt="Sam Agri Fresh" />
