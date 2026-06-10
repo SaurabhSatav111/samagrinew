@@ -116,7 +116,7 @@ const GroupCompanies = () => {
       {/* Processing Entities */}
       <section className="pb-12 md:pb-16 px-6 md:px-12 relative z-10">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-xl md:text-2xl font-sans text-zinc-400 uppercase tracking-[0.3em] mb-12 border-b border-zinc-200 pb-4">Processing Entities</h2>
+          <h2 className="text-xl md:text-2xl font-sans font-black text-zinc-800 uppercase tracking-[0.3em] mb-12 border-b border-zinc-200 pb-4">Processing Entities</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {/* Sam Agritech Limited */}
             <div className="group relative aspect-square rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-lg border border-zinc-200 transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
@@ -146,7 +146,7 @@ const GroupCompanies = () => {
       {/* Infrastructure & Logistics */}
       <section className="pb-12 md:pb-20 px-6 md:px-12 relative z-10">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-xl md:text-2xl font-sans text-zinc-400 uppercase tracking-[0.3em] mb-12 border-b border-zinc-200 pb-4">Infrastructure & Logistics</h2>
+          <h2 className="text-xl md:text-2xl font-sans font-black text-zinc-800 uppercase tracking-[0.3em] mb-12 border-b border-zinc-200 pb-4">Infrastructure & Logistics</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {/* Sam Agri Fresh Pvt Ltd */}
             <div className="group relative aspect-square rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-lg border border-zinc-200 transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
@@ -165,7 +165,7 @@ const GroupCompanies = () => {
       {/* Global Marketing Hubs */}
       <section className="pb-20 md:pb-32 px-6 md:px-12 relative z-10">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-xl md:text-2xl font-sans text-zinc-400 uppercase tracking-[0.3em] mb-12 border-b border-zinc-200 pb-4">Global Marketing & Trade</h2>
+          <h2 className="text-xl md:text-2xl font-sans font-black text-zinc-800 uppercase tracking-[0.3em] mb-12 border-b border-zinc-200 pb-4">Global Marketing & Trade</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Switzerland */}
             <div className="group relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-md border border-zinc-200 transition-all duration-700 hover:scale-[1.02] hover:shadow-lg">
