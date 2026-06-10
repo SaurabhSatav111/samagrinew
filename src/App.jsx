@@ -30,7 +30,23 @@ import WestInAvo from './pages/WestInAvo'
 function ScrollToTop() {
   const { pathname } = useLocation()
   useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual'
+    }
+
+    // Scroll immediately
     window.scrollTo(0, 0)
+    document.documentElement.scrollTo(0, 0)
+    document.body.scrollTo(0, 0)
+
+    // Scroll again in the next frame to catch layout shifts after React renders
+    const handle = requestAnimationFrame(() => {
+      window.scrollTo(0, 0)
+      document.documentElement.scrollTo(0, 0)
+      document.body.scrollTo(0, 0)
+    })
+
+    return () => cancelAnimationFrame(handle)
   }, [pathname])
   return null
 }
