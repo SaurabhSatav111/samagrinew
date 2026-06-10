@@ -43,70 +43,74 @@ const GroupCompanies = () => {
       </section>
 
       {/* Our Partners / Affiliated Organizations */}
-      <section className="py-16 md:py-24 px-6 md:px-12 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+      <section className="bg-white py-16 md:py-24 px-6 md:px-12 overflow-hidden border-b border-zinc-100">
+        <div className="max-w-7xl mx-auto text-center">
+          <div className="mb-12">
             <span className="text-primary font-bold text-xs uppercase tracking-widest bg-primary/5 px-4 py-1.5 rounded-full">Partners & Affiliates</span>
             <h2 className="text-3xl md:text-5xl font-sans font-bold text-zinc-800 mt-4 uppercase tracking-tighter">Affiliated Organizations</h2>
             <div className="w-20 h-1 bg-secondary mx-auto mt-4"></div>
           </div>
           
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
-            {[
-              { name: "Westfalia Fruit", img: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=400" },
-              { name: "Dvori Or", img: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=400" },
-              { name: "APEDA", img: "/apeda.png" },
-              { name: "NABARD", img: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=400" },
-              { name: "Suix Trade GMBH", img: "https://images.unsplash.com/photo-1516550893923-42d28e5677af?q=80&w=400" },
-              { name: "Zohara Farms", img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=400" }
-            ].map((partner, idx) => (
-              <div key={idx} className="group flex flex-col items-center text-center">
-                <div className="w-full aspect-square rounded-2xl overflow-hidden shadow-md border border-zinc-100 group-hover:shadow-lg transition-shadow duration-300">
-                  <img 
-                    src={partner.img} 
-                    alt={partner.name} 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-                  />
-                </div>
-                <h4 className="mt-3 font-sans font-bold text-sm text-zinc-700 group-hover:text-primary transition-colors uppercase tracking-wider">
-                  {partner.name}
-                </h4>
+          {/* Row 1 — 3 partners */}
+          <div className="dp-row w-full max-w-6xl mx-auto px-6 justify-center" style={{ gap: '24px', marginBottom: '24px' }}>
+            <div className="dp-card border border-zinc-200/60 shadow-md rounded-2xl group hover:border-primary transition-all duration-300">
+              <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=400" alt="Westfalia Fruit" />
+              <div className="dp-info text-left">
+                <h3>Westfalia Fruit</h3>
+                <p>Leading multinational supplier of fresh fruit, specializing in avocados.</p>
+                <a href="#">Know More</a>
               </div>
-            ))}
+            </div>
+            <div className="dp-card border border-zinc-200/60 shadow-md rounded-2xl group hover:border-primary transition-all duration-300">
+              <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=400" alt="Dvori Or" />
+              <div className="dp-info text-left">
+                <h3>Dvori Or</h3>
+                <p>Strategic agricultural production partner based in Israel.</p>
+                <a href="#">Know More</a>
+              </div>
+            </div>
+            <div className="dp-card border border-zinc-200/60 shadow-md rounded-2xl group hover:border-primary transition-all duration-300">
+              <img src="/apeda.png" alt="APEDA" />
+              <div className="dp-info text-left">
+                <h3>APEDA</h3>
+                <p>Agricultural and Processed Food Products Export Development Authority of India.</p>
+                <a href="#">Know More</a>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
 
-      {/* Domestic Presence */}
-      <section className="pt-16 md:pt-24 pb-12 md:pb-16 px-6 md:px-12 relative z-10">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-xl md:text-2xl font-sans font-black text-zinc-800 uppercase tracking-[0.3em] mb-12 border-b border-zinc-200 pb-4">Domestic Presence</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {[
-              { name: "West-In-Avo", img: "/assets/avocado.jpg", location: "Maharashtra, India", desc: "Premium Hass avocados grown in our domestic farms, tree-ripened quality for every table." },
-              { name: "Sam Berry", img: "/assets/sam_berry_basket.png", location: "Karnataka, India", desc: "A lush assortment of locally sourced berries and seasonal gift baskets." },
-              { name: "Sam's Delight", img: "/assets/almond.jpg", location: "South India", desc: "Our flagship range of premium papaya and tropical delicacies." },
-              { name: "Sam Alpine", img: "https://images.unsplash.com/photo-1498557850523-fd3d118b962e?q=80&w=800", location: "South India", desc: "High-altitude blueberries grown for intense flavor and nutrition." },
-              { name: "Ozar Tulip", img: "/assets/tulip.jpg", location: "Ozar, Maharashtra", desc: "Premium floriculture vertical specializing in exotic Dutch tulips." },
-              { name: "Sam's Wine", img: "/assets/pomogranatewine.png", location: "Nashik, Maharashtra", desc: "Artisanal fruit wines crafted from our finest pomegranate harvests." },
-              { name: "SIDVIN", img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800", location: "Bangalore, Karnataka", desc: "Real estate and infrastructure services supporting agricultural growth." }
-            ].map((company, idx) => (
-              <div key={idx} className="group relative aspect-square rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-lg border border-zinc-200 transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
-                <img src={company.img} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt={company.name} />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent"></div>
-                <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end">
-                  <span className="text-[#9ef295] font-bold text-[10px] uppercase tracking-widest mb-2">{company.location}</span>
-                  <h3 className="text-2xl md:text-3xl font-sans font-bold text-white mb-4 leading-tight">{company.name}</h3>
-                  <p className="text-white/70 text-sm leading-relaxed group-hover:text-white transition-colors">{company.desc}</p>
-                </div>
+          {/* Row 2 — 3 partners */}
+          <div className="dp-row w-full max-w-6xl mx-auto px-6 justify-center" style={{ gap: '24px' }}>
+            <div className="dp-card border border-zinc-200/60 shadow-md rounded-2xl group hover:border-primary transition-all duration-300">
+              <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=400" alt="NABARD" />
+              <div className="dp-info text-left">
+                <h3>NABARD</h3>
+                <p>National Bank for Agriculture and Rural Development supporting rural growth.</p>
+                <a href="#">Know More</a>
               </div>
-            ))}
+            </div>
+            <div className="dp-card border border-zinc-200/60 shadow-md rounded-2xl group hover:border-primary transition-all duration-300">
+              <img src="https://images.unsplash.com/photo-1516550893923-42d28e5677af?q=80&w=400" alt="Suix Trade GMBH" />
+              <div className="dp-info text-left">
+                <h3>Suix Trade GMBH</h3>
+                <p>Global marketing and distribution partner located in Switzerland.</p>
+                <a href="#">Know More</a>
+              </div>
+            </div>
+            <div className="dp-card border border-zinc-200/60 shadow-md rounded-2xl group hover:border-primary transition-all duration-300">
+              <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=400" alt="Zohara Farms" />
+              <div className="dp-info text-left">
+                <h3>Zohara Farms</h3>
+                <p>State-of-the-art agricultural farming partner specializing in fresh produce.</p>
+                <a href="#">Know More</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Processing Entities */}
-      <section className="pb-12 md:pb-16 px-6 md:px-12 relative z-10">
+      <section className="pt-16 md:pt-24 pb-12 md:pb-16 px-6 md:px-12 relative z-10">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-xl md:text-2xl font-sans font-black text-zinc-800 uppercase tracking-[0.3em] mb-12 border-b border-zinc-200 pb-4">Processing Entities</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -142,7 +146,7 @@ const GroupCompanies = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {/* Sam Agri Fresh Pvt Ltd */}
             <div className="group relative aspect-square rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-lg border border-zinc-200 transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
-              <img src="https://images.unsplash.com/photo-1615485290382-441e4d019cb5?q=80&w=2000" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Sam Agri Fresh" />
+              <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2000" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Sam Agri Fresh" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent"></div>
               <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end">
                 <span className="text-[#9ef295] font-bold text-[10px] uppercase tracking-widest mb-2">Nashik, Maharashtra</span>
