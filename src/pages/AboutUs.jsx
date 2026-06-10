@@ -160,7 +160,7 @@ const AboutUs = () => {
       </section>
 
       {/* Who We Are (Kaybee Style) */}
-      <section className="px-6 md:px-12 py-20 md:py-32 bg-white overflow-hidden">
+      <section className="px-6 md:px-12 py-12 md:py-16 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
             <motion.div 
@@ -215,7 +215,7 @@ const AboutUs = () => {
       </section>
 
       {/* Our Milestones */}
-      <section className="py-20 md:py-32 px-6 md:px-12 bg-surface relative overflow-hidden">
+      <section className="py-12 md:py-16 px-6 md:px-12 bg-surface relative overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 md:mb-24">
             <div className="inline-block px-4 py-1 bg-secondary/10 text-secondary font-bold text-xs uppercase tracking-widest rounded-full mb-6">
@@ -262,7 +262,7 @@ const AboutUs = () => {
       </section>
 
       {/* Infrastructure & Quality */}
-      <section className="py-20 md:py-32 px-6 md:px-12 bg-white">
+      <section className="py-12 md:py-16 px-6 md:px-12 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
             <motion.div 
@@ -305,7 +305,7 @@ const AboutUs = () => {
       </section>
 
       {/* Leadership Team */}
-      <section className="bg-surface-container-low py-20 md:py-32 px-6 md:px-12">
+      <section className="bg-surface-container-low py-12 md:py-16 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 md:mb-24">
             <div className="inline-block px-4 py-1 bg-secondary/10 text-secondary font-bold text-xs uppercase tracking-widest rounded-full mb-6">
@@ -375,7 +375,7 @@ const AboutUs = () => {
       </section>
 
       {/* Our Markets */}
-      <section className="py-20 md:py-32 px-6 md:px-12 bg-surface">
+      <section className="py-12 md:py-16 px-6 md:px-12 bg-surface">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 md:mb-24">
             <h2 className="text-3xl md:text-5xl font-sans font-bold text-secondary mb-4 uppercase tracking-[0.2em]">

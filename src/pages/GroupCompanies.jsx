@@ -43,7 +43,7 @@ const GroupCompanies = () => {
       </section>
 
       {/* Domestic Presence Brands */}
-      <section className="py-16 md:py-24 px-6 md:px-12 bg-white">
+      <section className="pt-16 md:pt-24 pb-8 px-6 md:px-12 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-primary font-bold text-xs uppercase tracking-widest bg-primary/5 px-4 py-1.5 rounded-full">Domestic Brands</span>
@@ -79,7 +79,7 @@ const GroupCompanies = () => {
       </section>
 
       {/* Our Partners / Affiliated Organizations */}
-      <section className="py-16 md:py-24 px-6 md:px-12 bg-white border-t border-zinc-100">
+      <section className="pt-8 pb-16 md:pb-24 px-6 md:px-12 bg-white border-t border-zinc-100">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-primary font-bold text-xs uppercase tracking-widest bg-primary/5 px-4 py-1.5 rounded-full">Partners & Affiliates</span>
