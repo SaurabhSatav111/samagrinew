@@ -95,7 +95,7 @@ const Home = () => {
 
     projection = d3.geoNaturalEarth1()
       .scale(W / 5.6)
-      .translate([W / 2, H / 2 - 25])
+      .translate([W / 2, H / 2])
 
     pathGen = d3.geoPath().projection(projection)
 
@@ -425,7 +425,7 @@ const Home = () => {
         svgRef.current.setAttribute('height', newH)
         projection = d3.geoNaturalEarth1()
           .scale(newW / 5.6)
-          .translate([newW / 2, newH / 2 - 25])
+          .translate([newW / 2, newH / 2])
         pathGen = d3.geoPath().projection(projection)
         drawMap(worldData)
         destIdx = 0
@@ -560,11 +560,96 @@ const Home = () => {
         </div>
       </section>
 
+      {/* 3. Our Assortment */}
+      <section id="produce" className="bg-black pt-3 pb-8 md:pt-4 md:pb-12 lg:pt-4 lg:pb-20 px-6 md:px-12 overflow-hidden" style={{ paddingTop: '60px', marginTop: '-20px', background: '#000' }}>
+        <div className="max-w-screen-2xl mx-auto relative w-full">
+          <div className="mb-4 md:mb-6 flex flex-col md:flex-row items-start md:items-end justify-between gap-6">
+            <div>
+              <h2 className="text-4xl md:text-6xl font-serif font-black text-white uppercase leading-none">
+                {"Our "}<span className="text-secondary">Assortment</span>
+              </h2>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border border-white/10 lg:h-[480px]">
+            <Link to="/pomegranate-arils" className="relative group lg:row-span-2 overflow-hidden h-[380px] lg:h-auto border-b lg:border-b-0 lg:border-r border-white/10">
+              <img src="/arils_3d.png" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Pomegranate Arils" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <h4 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white uppercase tracking-tighter leading-none mb-2 drop-shadow-2xl">
+                  POMEGRANATE <br /> ARILS
+                </h4>
+              </div>
+            </Link>
+ 
+            <Link to="/coconut-chunks" className="relative group overflow-hidden h-[240px] border-b md:r-r lg:border-r border-white/10">
+              <img src="/coconut_3d.png" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Coconut Chunks" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <h4 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white uppercase tracking-tighter leading-none mb-2 drop-shadow-2xl">
+                  COCONUT <br /> CHUNKS
+                </h4>
+              </div>
+            </Link>
+ 
+            <Link to="/whole-fruit" className="relative group overflow-hidden h-[240px] border-b lg:border-r border-white/10">
+              <img src="/pomegranate_3d.png" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Whole Fruit" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <h4 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white uppercase tracking-tighter leading-none mb-2 drop-shadow-2xl">
+                  WHOLE <br /> FRUIT
+                </h4>
+              </div>
+            </Link>
+ 
+            <Link to="#" className="relative group overflow-hidden h-[240px] border-b border-white/10">
+              <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?q=80&w=800" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Frozen Juice" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <h4 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white uppercase tracking-tighter leading-none mb-2 drop-shadow-2xl">
+                  FROZEN <br /> JUICE
+                </h4>
+              </div>
+            </Link>
+ 
+            <Link to="/dried-arils" className="relative group overflow-hidden h-[240px] border-b md:border-b-0 md:border-r border-white/10">
+              <img src="/assets/dried-arils.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Dried Arils" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <h4 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white uppercase tracking-tighter leading-none mb-2 drop-shadow-2xl">
+                  DRIED <br /> ARILS
+                </h4>
+              </div>
+            </Link>
+ 
+            <Link to="/iqf-arils" className="relative group overflow-hidden h-[240px] border-b md:border-b-0 lg:border-r border-white/10">
+              <img src="/assets/ivfarils.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="IQF Aril" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <h4 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white uppercase tracking-tighter leading-none mb-2 drop-shadow-2xl">
+                  IQF <br /> ARIL
+                </h4>
+              </div>
+            </Link>
+ 
+            <Link to="#" className="relative group overflow-hidden h-[240px] border-b md:border-b-0 border-white/10">
+              <img src="/assets/pomogranatewine.png" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Wines" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <h4 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white uppercase tracking-tighter leading-none mb-2 drop-shadow-2xl">
+                  WINES
+                </h4>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* 4. GLOBAL PRESENCE — Interactive D3 World Map */}
-      <section id="global-presence" className="bg-white pt-3 pb-4 md:pt-4 md:pb-6 px-6 md:px-12 overflow-hidden">
+      <section id="global-presence" className="bg-white pt-8 pb-4 md:pt-12 md:pb-6 px-6 md:px-12 overflow-hidden">
         <div className="max-w-screen-2xl mx-auto relative w-full">
           {/* Section Header */}
-          <div className="mb-6 md:mb-8 flex flex-col md:flex-row items-start md:items-end justify-between gap-6 pb-4">
+          <div className="mb-4 md:mb-6 flex flex-col md:flex-row items-start md:items-end justify-between gap-6 pb-0">
             <div>
               <h2 className="text-4xl md:text-6xl font-serif font-black text-primary uppercase leading-none">
                 Global{" "}<span className="text-secondary">Presence</span>
@@ -603,27 +688,26 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 3. Our Assortment */}
-      <section id="produce" className="snap-section bg-black py-4 md:py-8 lg:py-12 px-6 md:px-12 flex flex-col justify-center overflow-hidden">
+      {/* 5. Domestic Presence */}
+      <section id="domestic" className="bg-[#0a0a0a] min-h-screen pt-8 pb-10 md:pt-12 md:pb-16 px-6 md:px-12 overflow-hidden" style={{ paddingBottom: '80px' }}>
         <div className="max-w-screen-2xl mx-auto relative w-full">
-          <div className="mb-4 md:mb-6 flex flex-col md:flex-row items-start md:items-end justify-between gap-6">
+          <div className="mb-6 md:mb-8 flex flex-col md:flex-row items-start md:items-end justify-between gap-6">
             <div>
               <h2 className="text-4xl md:text-6xl font-serif font-black text-white uppercase leading-none">
-                {"Our "}<span className="text-secondary">Assortment</span>
+                Domestic{" "}<span className="text-[#9ef295]">Presence</span>
               </h2>
             </div>
           </div>
 
-          <div className="flex lg:grid lg:grid-cols-4 gap-4 lg:gap-0 border border-white/10 h-[55vh] lg:h-[60vh] overflow-x-auto lg:overflow-visible pb-4 lg:pb-0 scrollbar-none">
-            <Link to="/pomegranate-arils" className="relative group flex-shrink-0 w-[75vw] sm:w-[45vw] h-full lg:w-auto lg:h-auto lg:row-span-2 overflow-hidden border border-white/10 lg:border-0 lg:border-b lg:border-r border-white/10">
-              <img src="/arils_3d.png" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Pomegranate Arils" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <h4 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white uppercase tracking-tighter leading-none mb-2 drop-shadow-2xl">
-                  POMEGRANATE <br /> ARILS
-                </h4>
+          <div className="dp-row dp-row-top mt-8">
+            <div className="dp-card">
+              <img src="/assets/avocado.jpg" alt="West-In-Avo" />
+              <div className="dp-info">
+                <h3>West-In-Avo</h3>
+                <p>Premium Hass avocados grown in our domestic farms, tree-ripened quality for every table.</p>
+                <a href="#">Know More</a>
               </div>
-            </Link>
+            </div>
  
             <Link to="/coconut-chunks" className="relative group flex-shrink-0 w-[75vw] sm:w-[45vw] h-full lg:w-auto lg:h-auto overflow-hidden border border-white/10 lg:border-0 lg:border-b lg:border-r border-white/10">
               <img src="/coconut_3d.png" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Coconut Chunks" />
