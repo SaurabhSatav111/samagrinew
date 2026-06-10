@@ -143,7 +143,7 @@ const AboutUs = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white leading-none uppercase tracking-tighter"
+            className="text-5xl md:text-7xl lg:text-8xl font-sans font-bold text-white leading-none uppercase tracking-tighter"
           >
             Group <br />
             <span className="text-[#9ef295]">Profile</span>
@@ -173,7 +173,7 @@ const AboutUs = () => {
               <div className="inline-block px-4 py-1 bg-secondary/10 text-secondary font-bold text-xs uppercase tracking-widest rounded-full">
                 Our Story
               </div>
-              <h2 className="text-4xl md:text-6xl font-serif font-bold text-primary leading-tight">
+              <h2 className="text-4xl md:text-6xl font-sans font-bold text-primary leading-tight">
                 WHO WE <span className="text-secondary">ARE</span>
               </h2>
               <div className="w-20 h-1.5 bg-secondary"></div>
@@ -185,11 +185,11 @@ const AboutUs = () => {
               </p>
               <div className="grid grid-cols-2 gap-6 md:gap-12 pt-4 md:pt-8">
                 <div className="p-6 bg-surface-container-low rounded-2xl border-l-4 border-primary">
-                  <h4 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-2">25+</h4>
+                  <h4 className="text-3xl md:text-4xl font-sans font-bold text-primary mb-2">25+</h4>
                   <p className="text-[10px] md:text-xs font-black uppercase tracking-widest text-zinc-500">Years of Growth</p>
                 </div>
                 <div className="p-6 bg-surface-container-low rounded-2xl border-l-4 border-secondary">
-                  <h4 className="text-3xl md:text-4xl font-serif font-bold text-secondary mb-2">1000+</h4>
+                  <h4 className="text-3xl md:text-4xl font-sans font-bold text-secondary mb-2">1000+</h4>
                   <p className="text-[10px] md:text-xs font-black uppercase tracking-widest text-zinc-500">MT Arils Annually</p>
                 </div>
               </div>
@@ -221,7 +221,7 @@ const AboutUs = () => {
             <div className="inline-block px-4 py-1 bg-secondary/10 text-secondary font-bold text-xs uppercase tracking-widest rounded-full mb-6">
               Our Journey
             </div>
-            <h2 className="text-4xl md:text-6xl font-serif font-bold text-primary mb-4 uppercase tracking-tighter">
+            <h2 className="text-4xl md:text-6xl font-sans font-bold text-primary mb-4 uppercase tracking-tighter">
               OUR <span className="text-secondary">MILESTONES</span>
             </h2>
             <div className="w-24 h-1.5 bg-secondary mx-auto"></div>
@@ -242,7 +242,7 @@ const AboutUs = () => {
                   m.isSecondary ? 'border-secondary' : 'border-primary'
                 }`}
               >
-                <div className={`text-4xl font-serif font-bold mb-2 ${m.isSecondary ? 'text-secondary' : 'text-primary'}`}>
+                <div className={`text-4xl font-sans font-bold mb-2 ${m.isSecondary ? 'text-secondary' : 'text-primary'}`}>
                   {m.year}
                 </div>
                 {m.tag && (
@@ -275,7 +275,7 @@ const AboutUs = () => {
               <div className="w-16 h-16 md:w-20 md:h-20 bg-primary/10 rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
                 <i className="fas fa-industry text-2xl md:text-3xl"></i>
               </div>
-              <h3 className="text-3xl md:text-4xl font-serif font-bold text-primary">
+              <h3 className="text-3xl md:text-4xl font-sans font-bold text-primary">
                 State-of-the-art <span className="text-[#83d57c]">Infrastructure</span>
               </h3>
               <p className="text-on-surface-variant leading-relaxed text-sm md:text-base font-sans">
@@ -293,7 +293,7 @@ const AboutUs = () => {
               <div className="w-16 h-16 md:w-20 md:h-20 bg-secondary/10 rounded-2xl flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all duration-300">
                 <i className="fas fa-award text-2xl md:text-3xl"></i>
               </div>
-              <h3 className="text-3xl md:text-4xl font-serif font-bold text-secondary">
+              <h3 className="text-3xl md:text-4xl font-sans font-bold text-secondary">
                 Quality & <span className="text-secondary/60">Food Safety</span>
               </h3>
               <p className="text-on-surface-variant leading-relaxed text-sm md:text-base font-sans">
@@ -308,7 +308,7 @@ const AboutUs = () => {
       <section className="py-20 md:py-32 px-6 md:px-12 bg-surface">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 md:mb-24">
-            <h2 className="text-3xl md:text-5xl font-serif font-bold text-secondary mb-4 uppercase tracking-[0.2em]">
+            <h2 className="text-3xl md:text-5xl font-sans font-bold text-secondary mb-4 uppercase tracking-[0.2em]">
               OUR MARKETS
             </h2>
             <div className="w-24 h-1.5 bg-primary mx-auto"></div>
@@ -350,7 +350,7 @@ const AboutUs = () => {
             <div className="inline-block px-4 py-1 bg-secondary/10 text-secondary font-bold text-xs uppercase tracking-widest rounded-full mb-6">
               The Minds Behind Sam Agri
             </div>
-            <h2 className="text-4xl md:text-6xl font-serif font-bold text-on-surface leading-tight uppercase tracking-tighter">
+            <h2 className="text-4xl md:text-6xl font-sans font-bold text-on-surface leading-tight uppercase tracking-tighter">
               OUR <span className="text-secondary">LEADERSHIP</span>
             </h2>
             <div className="w-24 h-1.5 bg-secondary mx-auto mt-4"></div>
@@ -373,14 +373,14 @@ const AboutUs = () => {
                   <div className="aspect-[4/5] overflow-hidden relative">
                     <img 
                       src={member.image} 
-                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000" 
+                      className="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000" 
                       alt={member.name} 
                       onError={(e) => { e.target.src = 'https://via.placeholder.com/400x500?text=' + member.name }}
                     />
                     
                     {/* Hover Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 md:p-10 z-10">
-                      <h3 className="text-3xl md:text-4xl font-serif font-bold text-white mb-1">
+                      <h3 className="text-3xl md:text-4xl font-sans font-bold text-white mb-1">
                         {member.name}
                       </h3>
                       <p className="text-secondary font-black text-xs uppercase tracking-[0.3em] mb-4 md:mb-6">
@@ -399,7 +399,7 @@ const AboutUs = () => {
                   
                   {/* Default Info (Fades out on hover, preventing layout shifts by retaining space) */}
                   <div className="p-6 md:p-8 group-hover:opacity-0 transition-opacity duration-500 text-left">
-                    <h3 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-1">
+                    <h3 className="text-2xl md:text-3xl font-sans font-bold text-primary mb-1">
                       {member.name}
                     </h3>
                     <p className="text-secondary font-black text-xs uppercase tracking-[0.2em]">

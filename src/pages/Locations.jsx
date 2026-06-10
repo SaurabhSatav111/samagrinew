@@ -31,7 +31,7 @@ const Locations = () => {
               </div>
             ))}
           </div>
-          
+
           {/* Export Markets */}
           <div className="mt-16 md:mt-24 text-center">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#111] mb-8">Export Markets</h2>

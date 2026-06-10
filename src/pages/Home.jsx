@@ -452,11 +452,11 @@ const Home = () => {
       <section className="relative w-full h-screen bg-black flex flex-col lg:flex-row items-center justify-center overflow-hidden">
         {/* The video container */}
         <div className="absolute inset-0 w-full h-full z-10">
-          <video 
-            autoPlay 
-            muted 
-            loop 
-            playsInline 
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
             className="w-full h-full object-cover object-center"
           >
             <source src="/assets/Sam_agri_music_&_caption.mp4" type="video/mp4" />
@@ -708,7 +708,6 @@ const Home = () => {
                 <a href="#">Know More</a>
               </div>
             </div>
- 
             <Link to="/coconut-chunks" className="relative group flex-shrink-0 w-[75vw] sm:w-[45vw] h-full lg:w-auto lg:h-auto overflow-hidden border border-white/10 lg:border-0 lg:border-b lg:border-r border-white/10">
               <img src="/coconut_3d.png" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Coconut Chunks" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -718,7 +717,7 @@ const Home = () => {
                 </h4>
               </div>
             </Link>
- 
+
             <Link to="/whole-fruit" className="relative group flex-shrink-0 w-[75vw] sm:w-[45vw] h-full lg:w-auto lg:h-auto overflow-hidden border border-white/10 lg:border-0 lg:border-b lg:border-r border-white/10">
               <img src="/pomegranate_3d.png" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Whole Fruit" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -728,7 +727,7 @@ const Home = () => {
                 </h4>
               </div>
             </Link>
- 
+
             <Link to="#" className="relative group flex-shrink-0 w-[75vw] sm:w-[45vw] h-full lg:w-auto lg:h-auto overflow-hidden border border-white/10 lg:border-0 lg:border-b border-white/10">
               <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?q=80&w=800" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Frozen Juice" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -738,7 +737,7 @@ const Home = () => {
                 </h4>
               </div>
             </Link>
- 
+
             <Link to="/dried-arils" className="relative group flex-shrink-0 w-[75vw] sm:w-[45vw] h-full lg:w-auto lg:h-auto overflow-hidden border border-white/10 lg:border-0 lg:border-b lg:border-r border-white/10">
               <img src="/assets/pomogranatearils.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Dried Arils" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -748,7 +747,7 @@ const Home = () => {
                 </h4>
               </div>
             </Link>
- 
+
             <Link to="/iqf-arils" className="relative group flex-shrink-0 w-[75vw] sm:w-[45vw] h-full lg:w-auto lg:h-auto overflow-hidden border border-white/10 lg:border-0 lg:border-b lg:border-r border-white/10">
               <img src="/assets/ivfarils.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="IQF Aril" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -758,7 +757,7 @@ const Home = () => {
                 </h4>
               </div>
             </Link>
- 
+
             <Link to="#" className="relative group flex-shrink-0 w-[75vw] sm:w-[45vw] h-full lg:w-auto lg:h-auto overflow-hidden border border-white/10 lg:border-0 lg:border-b border-white/10">
               <img src="/assets/pomogranatewine.png" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Wines" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
