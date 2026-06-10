@@ -761,6 +761,43 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* 6. Our Certifications */}
+      <section id="certifications" className="bg-white py-8 md:py-12 px-6 md:px-12 overflow-hidden border-t border-zinc-100">
+        <div className="max-w-screen-2xl mx-auto relative w-full">
+          <div className="mb-10 md:mb-14 flex flex-col md:flex-row items-start md:items-end justify-between gap-6 border-b border-zinc-100 pb-8">
+            <div>
+              <h2 className="text-4xl md:text-6xl font-serif font-black text-primary uppercase leading-none">
+                Our{" "}<span className="text-secondary">Certifications</span>
+              </h2>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6 md:gap-8 items-center justify-items-center">
+            <a href="https://www.globalgap.org/" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center w-full h-24">
+              <img src="/globalgapnew.png" className="max-h-16 md:max-h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105" alt="Global GAP" />
+            </a>
+            <a href="https://www.brcgs.com/" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center w-full h-24">
+              <img src="/brc.png" className="max-h-16 md:max-h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105" alt="BRCGS" />
+            </a>
+            <a href="https://www.iso.org/publication/PUB200220.html?utm_source=google&utm_medium=ppc_paid_social&utm_campaign=ISO22000&gad_source=1&gad_campaignid=23276729455&gbraid=0AAAAABtQACEufWfeWwUoDPL3DH_xtnMu1&gclid=CjwKCAjw5s_QBhAdEiwADD_gBgpQ8CU9iLKyxxJYkj73VLR4oXxB7oGBw0nKCIv8HFViNCJStEFwrRoC5PYQAvD_BwE" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center w-full h-24">
+              <img src="/iso.png" className="max-h-16 md:max-h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105" alt="ISO 22000" />
+            </a>
+            <a href="https://www.fssai.gov.in/" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center w-full h-24">
+              <img src="/fssai.png" className="max-h-16 md:max-h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105" alt="FSSAI" />
+            </a>
+            <a href="https://www.fda.gov/" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center w-full h-24">
+              <img src="/fda.png" className="max-h-16 md:max-h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105" alt="US FDA" />
+            </a>
+            <a href="https://www.sedex.com/solutions/smeta-audit/" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center w-full h-24">
+              <img src="/ssmeta1234.png" className="max-h-18 md:max-h-22 w-auto object-contain transition-transform duration-300 group-hover:scale-105" alt="SMETA" />
+            </a>
+            <a href="https://www.fairtrade.net/en/for-business/how-to-get-involved/get-certified.html" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center w-full h-24">
+              <img src="/fairtrade.png" className="max-h-16 md:max-h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105" alt="Fairtrade" />
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
   )
 }
