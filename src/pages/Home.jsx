@@ -623,7 +623,7 @@ const Home = () => {
             </Link>
  
             <Link to="/iqf-arils" className="relative group overflow-hidden h-[240px] border-b md:border-b-0 lg:border-r border-white/10">
-              <img src="/assets/ivfarils.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="IQF Aril" />
+              <img src="/assets/pomogranatearils.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="IQF Aril" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <h4 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white uppercase tracking-tighter leading-none mb-2 drop-shadow-2xl">
