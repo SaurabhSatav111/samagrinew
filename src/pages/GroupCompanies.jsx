@@ -42,44 +42,8 @@ const GroupCompanies = () => {
         </div>
       </section>
 
-      {/* Domestic Presence Brands */}
-      <section className="pt-16 md:pt-24 pb-8 px-6 md:px-12 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <span className="text-primary font-bold text-xs uppercase tracking-widest bg-primary/5 px-4 py-1.5 rounded-full">Domestic Brands</span>
-            <h2 className="text-3xl md:text-5xl font-sans font-bold text-zinc-800 mt-4 uppercase tracking-tighter">Domestic Presence</h2>
-            <div className="w-20 h-1 bg-secondary mx-auto mt-4"></div>
-          </div>
-          
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6">
-            {[
-              { name: "West-In-Avo", img: "/assets/avocado.jpg" },
-              { name: "Sam Berry", img: "/assets/sam_berry_basket.png" },
-              { name: "Sam's Delight", img: "/assets/almond.jpg" },
-              { name: "Sam Alpine", img: "https://images.unsplash.com/photo-1498557850523-fd3d118b962e?q=80&w=800" },
-              { name: "Ozar Tulip", img: "/assets/tulip.jpg" },
-              { name: "Sam's Wine", img: "/assets/pomogranatewine.png" },
-              { name: "SIDVIN", img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800" }
-            ].map((company, idx) => (
-              <div key={idx} className="group flex flex-col items-center text-center">
-                <div className="w-full aspect-square rounded-2xl overflow-hidden shadow-md border border-zinc-100 group-hover:shadow-lg transition-shadow duration-300">
-                  <img 
-                    src={company.img} 
-                    alt={company.name} 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-                  />
-                </div>
-                <h4 className="mt-3 font-sans font-bold text-sm text-zinc-700 group-hover:text-primary transition-colors uppercase tracking-wider">
-                  {company.name}
-                </h4>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Our Partners / Affiliated Organizations */}
-      <section className="pt-8 pb-16 md:pb-24 px-6 md:px-12 bg-white border-t border-zinc-100">
+      <section className="py-16 md:py-24 px-6 md:px-12 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-primary font-bold text-xs uppercase tracking-widest bg-primary/5 px-4 py-1.5 rounded-full">Partners & Affiliates</span>
@@ -107,6 +71,34 @@ const GroupCompanies = () => {
                 <h4 className="mt-3 font-sans font-bold text-sm text-zinc-700 group-hover:text-primary transition-colors uppercase tracking-wider">
                   {partner.name}
                 </h4>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Domestic Presence */}
+      <section className="pt-16 md:pt-24 pb-12 md:pb-16 px-6 md:px-12 relative z-10">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-xl md:text-2xl font-sans font-black text-zinc-800 uppercase tracking-[0.3em] mb-12 border-b border-zinc-200 pb-4">Domestic Presence</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {[
+              { name: "West-In-Avo", img: "/assets/avocado.jpg", location: "Maharashtra, India", desc: "Premium Hass avocados grown in our domestic farms, tree-ripened quality for every table." },
+              { name: "Sam Berry", img: "/assets/sam_berry_basket.png", location: "Karnataka, India", desc: "A lush assortment of locally sourced berries and seasonal gift baskets." },
+              { name: "Sam's Delight", img: "/assets/almond.jpg", location: "South India", desc: "Our flagship range of premium papaya and tropical delicacies." },
+              { name: "Sam Alpine", img: "https://images.unsplash.com/photo-1498557850523-fd3d118b962e?q=80&w=800", location: "South India", desc: "High-altitude blueberries grown for intense flavor and nutrition." },
+              { name: "Ozar Tulip", img: "/assets/tulip.jpg", location: "Ozar, Maharashtra", desc: "Premium floriculture vertical specializing in exotic Dutch tulips." },
+              { name: "Sam's Wine", img: "/assets/pomogranatewine.png", location: "Nashik, Maharashtra", desc: "Artisanal fruit wines crafted from our finest pomegranate harvests." },
+              { name: "SIDVIN", img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800", location: "Bangalore, Karnataka", desc: "Real estate and infrastructure services supporting agricultural growth." }
+            ].map((company, idx) => (
+              <div key={idx} className="group relative aspect-square rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-lg border border-zinc-200 transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
+                <img src={company.img} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt={company.name} />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent"></div>
+                <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end">
+                  <span className="text-[#9ef295] font-bold text-[10px] uppercase tracking-widest mb-2">{company.location}</span>
+                  <h3 className="text-2xl md:text-3xl font-sans font-bold text-white mb-4 leading-tight">{company.name}</h3>
+                  <p className="text-white/70 text-sm leading-relaxed group-hover:text-white transition-colors">{company.desc}</p>
+                </div>
               </div>
             ))}
           </div>

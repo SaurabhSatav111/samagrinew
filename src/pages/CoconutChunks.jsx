@@ -35,44 +35,44 @@ const CoconutChunks = () => {
       </section>
 
       {/* Technical Specs Bento */}
-      <section id="spec" className="bg-zinc-950 py-12 md:py-24 px-6 md:px-12 relative overflow-hidden">
+      <section id="spec" className="bg-white py-12 md:py-24 px-6 md:px-12 relative overflow-hidden border-t border-zinc-100">
         <div className="max-w-screen-2xl mx-auto relative z-10">
           <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-12 md:mb-16 gap-6 md:gap-8">
             <div className="max-w-2xl">
-              <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-4 md:mb-6 uppercase tracking-tighter">Product <span className="text-[#9ef295]">Overview</span></h2>
+              <h2 className="text-3xl md:text-5xl font-serif font-bold text-zinc-900 mb-4 md:mb-6 uppercase tracking-tighter">Product <span className="text-primary">Overview</span></h2>
               <div className="w-16 md:w-24 h-1 md:h-1.5 bg-[#0d631b]"></div>
             </div>
-            <p className="text-white/40 font-display font-bold uppercase tracking-widest text-[10px]">Global Quality Standard</p>
+            <p className="text-zinc-400 font-display font-bold uppercase tracking-widest text-[10px]">Global Quality Standard</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-            <div className="bg-white/5 p-8 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border-l-4 border-[#9ef295]">
-              <h4 className="font-display font-bold text-white/30 uppercase text-[9px] tracking-widest mb-4">Shelf Life</h4>
-              <p className="text-lg md:text-xl font-serif font-bold text-white mb-2">12-15 Days</p>
-              <p className="text-[10px] text-white/40 font-sans">Under Cold Chain (2-4°C)</p>
+            <div className="bg-[#faf9f5] p-8 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border border-zinc-200/60 border-l-4 border-l-[#9ef295]">
+              <h4 className="font-display font-bold text-zinc-400 uppercase text-[9px] tracking-widest mb-4">Shelf Life</h4>
+              <p className="text-lg md:text-xl font-serif font-bold text-zinc-800 mb-2">12-15 Days</p>
+              <p className="text-[10px] text-zinc-500 font-sans">Under Cold Chain (2-4°C)</p>
             </div>
-            <div className="bg-white/5 p-8 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border-l-4 border-[#0d631b]">
-              <h4 className="font-display font-bold text-white/30 uppercase text-[9px] tracking-widest mb-4">Sourcing</h4>
-              <p className="text-lg md:text-xl font-serif font-bold text-white mb-2">Coastal Groves</p>
-              <p className="text-[10px] text-white/40 font-sans">South India Orchards</p>
+            <div className="bg-[#faf9f5] p-8 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border border-zinc-200/60 border-l-4 border-l-[#0d631b]">
+              <h4 className="font-display font-bold text-zinc-400 uppercase text-[9px] tracking-widest mb-4">Sourcing</h4>
+              <p className="text-lg md:text-xl font-serif font-bold text-zinc-800 mb-2">Coastal Groves</p>
+              <p className="text-[10px] text-zinc-500 font-sans">South India Orchards</p>
             </div>
-            <div className="bg-white/5 p-8 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border-l-4 border-[#7e1a12]">
-              <h4 className="font-display font-bold text-white/30 uppercase text-[9px] tracking-widest mb-4">Processing</h4>
-              <p className="text-lg md:text-xl font-serif font-bold text-white mb-2">Hygienically Cut</p>
-              <p className="text-[10px] text-white/40 font-sans">Modified Atmosphere Packing</p>
+            <div className="bg-[#faf9f5] p-8 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border border-zinc-200/60 border-l-4 border-l-[#7e1a12]">
+              <h4 className="font-display font-bold text-zinc-400 uppercase text-[9px] tracking-widest mb-4">Processing</h4>
+              <p className="text-lg md:text-xl font-serif font-bold text-zinc-800 mb-2">Hygienically Cut</p>
+              <p className="text-[10px] text-zinc-500 font-sans">Modified Atmosphere Packing</p>
             </div>
-            <div className="bg-white/5 p-8 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border-l-4 border-white/20">
-              <h4 className="font-display font-bold text-white/30 uppercase text-[9px] tracking-widest mb-4">Availability</h4>
-              <p className="text-lg md:text-xl font-serif font-bold text-white mb-2">365-Day</p>
-              <p className="text-[10px] text-white/40 font-sans">Steady Year-Round Supply</p>
+            <div className="bg-[#faf9f5] p-8 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border border-zinc-200/60 border-l-4 border-l-zinc-300">
+              <h4 className="font-display font-bold text-zinc-400 uppercase text-[9px] tracking-widest mb-4">Availability</h4>
+              <p className="text-lg md:text-xl font-serif font-bold text-zinc-800 mb-2">365-Day</p>
+              <p className="text-[10px] text-zinc-500 font-sans">Steady Year-Round Supply</p>
             </div>
           </div>
-
+ 
           {/* Dispatch Windows */}
           <div className="mt-12 md:mt-16">
-            <h4 className="font-display font-bold text-white/30 uppercase text-[10px] tracking-widest mb-6 md:mb-8 text-center md:text-left">Availability Calendar</h4>
+            <h4 className="font-display font-bold text-zinc-400 uppercase text-[10px] tracking-widest mb-6 md:mb-8 text-center md:text-left">Availability Calendar</h4>
             <div className="flex flex-wrap justify-center md:justify-start gap-4 md:gap-6">
               {['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'].map((month) => (
-                <span key={month} className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full border border-white/20 text-[#9ef295] text-[10px] md:text-xs font-bold bg-[#0d631b]/10">{month}</span>
+                <span key={month} className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full border border-zinc-200 text-primary text-[10px] md:text-xs font-bold bg-[#0d631b]/5">{month}</span>
               ))}
             </div>
           </div>
