@@ -118,16 +118,6 @@ const GroupCompanies = () => {
               </div>
             </div>
 
-            {/* Sidvin */}
-            <div className="group relative aspect-square rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-lg border border-zinc-200 transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl">
-              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Sidvin" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent"></div>
-              <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end text-left">
-                <span className="text-[#9ef295] font-bold text-[10px] uppercase tracking-widest mb-2">Domestic Brand</span>
-                <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4 leading-tight">Sidvin</h3>
-                <p className="text-white/70 text-sm leading-relaxed group-hover:text-white transition-colors">Real estate and infrastructure services supporting agricultural growth.</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>

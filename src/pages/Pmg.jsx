@@ -356,13 +356,10 @@ const Pmg = () => {
           {/* RIGHT 55% — Full bleed Pomegranate Aril Photo */}
           <div className="hero-right-pmg">
             <img
-              src="/assets/pomogranatearils.jpg"
+              src="/arils_3d.png"
               alt="Fresh pomegranate arils — deep red Bhagwa variety"
             />
             <div className="hero-right-overlay-pmg"></div>
-            <div className="hero-stat-pill-pmg pill-1-pmg">Bhagwa Variety</div>
-            <div className="hero-stat-pill-pmg pill-2-pmg">365-Day Supply</div>
-            <div className="hero-stat-pill-pmg pill-3-pmg">Manual Extraction</div>
           </div>
         </section>
 
