@@ -705,7 +705,7 @@ const Home = () => {
               <div className="dp-info">
                 <h3>West-In-Avo</h3>
                 <p>Premium Hass avocados grown in our domestic farms, tree-ripened quality for every table.</p>
-                <a href="#">Know More</a>
+                <Link to="/group-companies">Know More</Link>
               </div>
             </div>
             <div className="dp-card" data-name="Sam Berry">
@@ -713,7 +713,7 @@ const Home = () => {
               <div className="dp-info">
                 <h3>Sam Berry</h3>
                 <p>A lush assortment of locally sourced berries and seasonal gift baskets.</p>
-                <a href="#">Know More</a>
+                <Link to="/group-companies">Know More</Link>
               </div>
             </div>
             <div className="dp-card" data-name="Sam's Delight">
@@ -721,7 +721,7 @@ const Home = () => {
               <div className="dp-info">
                 <h3>Sam's Delight</h3>
                 <p>Our flagship range of premium almonds and nutritious dry fruits.</p>
-                <a href="#">Know More</a>
+                <Link to="/group-companies">Know More</Link>
               </div>
             </div>
             <div className="dp-card" data-name="Sam Alpine">
@@ -729,7 +729,7 @@ const Home = () => {
               <div className="dp-info">
                 <h3>Sam Alpine</h3>
                 <p>High-altitude blueberries grown for intense flavor and nutrition.</p>
-                <a href="#">Know More</a>
+                <Link to="/group-companies">Know More</Link>
               </div>
             </div>
           </div>
@@ -739,7 +739,7 @@ const Home = () => {
               <div className="dp-info">
                 <h3>Ozar Tulip</h3>
                 <p>Premium floriculture vertical specializing in exotic Dutch tulips.</p>
-                <a href="#">Know More</a>
+                <Link to="/group-companies">Know More</Link>
               </div>
             </div>
             <div className="dp-card" data-name="Sam's Wine">
@@ -747,7 +747,7 @@ const Home = () => {
               <div className="dp-info">
                 <h3>Sam's Wine</h3>
                 <p>Artisanal fruit wines crafted from our finest pomegranate harvests.</p>
-                <a href="#">Know More</a>
+                <Link to="/group-companies">Know More</Link>
               </div>
             </div>
             <div className="dp-card" data-name="Sidvin">
@@ -755,7 +755,7 @@ const Home = () => {
               <div className="dp-info">
                 <h3>Sidvin</h3>
                 <p>Real estate and infrastructure services supporting agricultural growth.</p>
-                <a href="#">Know More</a>
+                <Link to="/group-companies">Know More</Link>
               </div>
             </div>
           </div>
