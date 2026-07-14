@@ -370,7 +370,7 @@ const PomegranateFruit = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-zinc-900 text-lg mb-2">Global MRL Compliant</h3>
+                    <h3 className="font-sans font-bold text-zinc-900 text-lg mb-2">Global MRL Compliant</h3>
                     <p className="text-zinc-500 text-xs leading-relaxed">Adhering to the strictest international residue limits for safe consumption.</p>
                   </div>
                 </div>
@@ -385,7 +385,7 @@ const PomegranateFruit = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-zinc-900 text-lg mb-2">Full Traceability</h3>
+                    <h3 className="font-sans font-bold text-zinc-900 text-lg mb-2">Full Traceability</h3>
                     <p className="text-zinc-500 text-xs leading-relaxed">Complete digital record from seedling to final delivery box.</p>
                   </div>
                 </div>
@@ -398,7 +398,7 @@ const PomegranateFruit = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-zinc-900 text-lg mb-2">Export Ready</h3>
+                    <h3 className="font-sans font-bold text-zinc-900 text-lg mb-2">Export Ready</h3>
                     <p className="text-zinc-500 text-xs leading-relaxed">Specially treated and packed for long-distance international transit.</p>
                   </div>
                 </div>
@@ -415,7 +415,7 @@ const PomegranateFruit = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-zinc-900 text-lg mb-2">Audit-Ready</h3>
+                    <h3 className="font-sans font-bold text-zinc-900 text-lg mb-2">Audit-Ready</h3>
                     <p className="text-zinc-500 text-xs leading-relaxed">Instant documentation access for distributors and retail chains.</p>
                   </div>
                 </div>
