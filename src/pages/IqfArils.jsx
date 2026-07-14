@@ -359,7 +359,6 @@ const IqfArils = () => {
               </h2>
               <div className="w-16 md:w-24 h-1 md:h-1.5 bg-[#0d631b]"></div>
             </div>
-            <p className="text-zinc-400 font-sans font-bold uppercase tracking-widest text-[10px] pb-1">Global Quality Standard</p>
           </div>
 
           <div className="badges-grid-iqf">
