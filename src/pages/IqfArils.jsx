@@ -352,9 +352,14 @@ const IqfArils = () => {
 
         {/* ATTRIBUTES */}
         <section className="section-iqf" id="attributes">
-          <div className="section-header-iqf">
-            <h2 className="section-title-iqf">Product Attributes</h2>
-            <div className="section-rule-iqf"></div>
+          <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-12 gap-6 border-b border-zinc-100 pb-6 w-full text-left font-sans">
+            <div className="max-w-2xl">
+              <h2 className="text-3xl md:text-5xl font-sans font-black text-zinc-900 mb-4 uppercase tracking-tighter">
+                Product <span className="text-[#0d631b]">Overview</span>
+              </h2>
+              <div className="w-16 md:w-24 h-1 md:h-1.5 bg-[#0d631b]"></div>
+            </div>
+            <p className="text-zinc-400 font-sans font-bold uppercase tracking-widest text-[10px] pb-1">Global Quality Standard</p>
           </div>
 
           <div className="badges-grid-iqf">
