@@ -133,7 +133,7 @@ const GlobalPresenceMap = () => {
                   key={state.id}
                   d={state.d}
                   fill={isHighlighted ? 'rgba(16, 185, 129, 0.15)' : 'rgba(15, 23, 42, 0.03)'}
-                  stroke={isHighlighted ? '#10b981' : 'rgba(148, 163, 184, 0.35)'}
+                  stroke={isHighlighted ? '#10b981' : 'rgba(90, 50, 30, 0.28)'}
                   strokeWidth={isHighlighted ? 1.5 : 0.8}
                 />
               );
