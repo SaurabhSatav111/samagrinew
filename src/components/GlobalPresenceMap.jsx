@@ -97,9 +97,9 @@ const GlobalPresenceMap = () => {
                   fill="none"
                   stroke="#10b981"
                   strokeWidth={isHovered ? 2.5 : 1.5}
-                  strokeDasharray={isHovered ? '6,6' : 'none'}
-                  className={`connection-curve ${isHovered ? 'active' : ''}`}
-                  opacity={isHovered ? 1 : 0.45}
+                  strokeDasharray="6,6"
+                  className="connection-curve active"
+                  opacity={isHovered ? 1 : 0.55}
                 />
               );
             })}
@@ -116,9 +116,9 @@ const GlobalPresenceMap = () => {
                   fill="none"
                   stroke="#10b981"
                   strokeWidth={isHovered ? 2.5 : 1.5}
-                  strokeDasharray={isHovered ? '6,6' : 'none'}
-                  className={`connection-curve ${isHovered ? 'active' : ''}`}
-                  opacity={isHovered ? 1 : 0.45}
+                  strokeDasharray="6,6"
+                  className="connection-curve active"
+                  opacity={isHovered ? 1 : 0.55}
                 />
               );
             })}
