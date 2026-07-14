@@ -350,52 +350,116 @@ const PomegranateFruit = () => {
           </div>
         </section>
 
-        {/* ATTRIBUTES */}
-        <section className="section-fruit" id="attributes">
-          <div className="section-header-fruit">
-            <h2 className="section-title-fruit">Product Attributes</h2>
-            <div className="section-rule-fruit"></div>
-          </div>
+        {/* GLOBAL EXPORT STANDARDS / BENTO SECTION */}
+        <section className="py-20 px-6 md:px-12 w-full text-left" style={{ backgroundColor: '#faf9f5' }} id="attributes">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-zinc-800 mb-10 font-sans">
+              Product <span className="text-[#0d631b]">Overview</span>
+            </h2>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+              
+              {/* Left Column: 4 Grid Cards */}
+              <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                
+                {/* Card 1: Global MRL Compliant */}
+                <div className="bg-white p-8 rounded-[1.5rem] shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-zinc-100 flex flex-col gap-5 text-left">
+                  <div className="w-10 h-10 bg-[#0d631b]/8 rounded-xl flex items-center justify-center text-[#0d631b]">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                      <path d="M20 6L9 17l-5-5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-zinc-900 text-lg mb-2">Global MRL Compliant</h3>
+                    <p className="text-zinc-500 text-xs leading-relaxed">Adhering to the strictest international residue limits for safe consumption.</p>
+                  </div>
+                </div>
 
-          <div className="badges-grid-fruit">
-            <span className="badge-fruit">Global MRL Compliant</span>
-            <span className="badge-fruit">Full Traceability</span>
-            <span className="badge-fruit">Vibrant Red Peel</span>
-            <span className="badge-fruit">High Brix Sweetness</span>
-            <span className="badge-fruit">Export Ready</span>
-            <span className="badge-fruit">90-Day Shelf Life</span>
-          </div>
+                {/* Card 2: Full Traceability */}
+                <div className="bg-white p-8 rounded-[1.5rem] shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-zinc-100 flex flex-col gap-5 text-left">
+                  <div className="w-10 h-10 bg-[#0d631b]/8 rounded-xl flex items-center justify-center text-[#0d631b]">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" strokeWidth="1.2" opacity="0.3"/>
+                      <circle cx="12" cy="12" r="3"/>
+                      <path d="M12 2v7M12 15v7M2 12h7M15 12h7"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-zinc-900 text-lg mb-2">Full Traceability</h3>
+                    <p className="text-zinc-500 text-xs leading-relaxed">Complete digital record from seedling to final delivery box.</p>
+                  </div>
+                </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-left mb-12">
-            <div className="bg-[#faf9f5] p-8 rounded-[1.5rem] border border-zinc-200/60 border-l-4 border-l-[#9ef295] hover:shadow-md transition-shadow">
-              <h4 className="font-bold text-zinc-400 uppercase text-[9px] tracking-widest mb-4">Availability</h4>
-              <p className="text-lg md:text-xl font-serif font-bold text-zinc-800 mb-2">365-Day Supply</p>
-              <p className="text-[10px] text-zinc-500 font-sans">Steady Year-Round Supply</p>
-            </div>
-            <div className="bg-[#faf9f5] p-8 rounded-[1.5rem] border border-zinc-200/60 border-l-4 border-l-[#0d631b] hover:shadow-md transition-shadow">
-              <h4 className="font-bold text-zinc-400 uppercase text-[9px] tracking-widest mb-4">Shelf Life</h4>
-              <p className="text-lg md:text-xl font-serif font-bold text-zinc-800 mb-2">Up to 90 Days</p>
-              <p className="text-[10px] text-zinc-500 font-sans">Controlled atmosphere</p>
-            </div>
-            <div className="bg-[#faf9f5] p-8 rounded-[1.5rem] border border-zinc-200/60 border-l-4 border-l-[#7e1a12] hover:shadow-md transition-shadow">
-              <h4 className="font-bold text-zinc-400 uppercase text-[9px] tracking-widest mb-4">Variety</h4>
-              <p className="text-lg md:text-xl font-serif font-bold text-zinc-800 mb-2">Bhagwa</p>
-              <p className="text-[10px] text-zinc-500 font-sans">Single variety</p>
-            </div>
-            <div className="bg-[#faf9f5] p-8 rounded-[1.5rem] border border-zinc-200/60 border-l-4 border-l-zinc-300 hover:shadow-md transition-shadow">
-              <h4 className="font-bold text-zinc-400 uppercase text-[9px] tracking-widest mb-4">Processing</h4>
-              <p className="text-lg md:text-xl font-serif font-bold text-zinc-800 mb-2">Graded & Sorted</p>
-              <p className="text-[10px] text-zinc-500 font-sans">Automated wash & size</p>
-            </div>
-          </div>
+                {/* Card 3: Export Ready */}
+                <div className="bg-white p-8 rounded-[1.5rem] shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-zinc-100 flex flex-col gap-5 text-left">
+                  <div className="w-10 h-10 bg-[#0d631b]/8 rounded-xl flex items-center justify-center text-[#0d631b]">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M2 17h20M2 12h20M5 12v5M19 12v5M10 7l2-2 2 2M12 5v7"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-zinc-900 text-lg mb-2">Export Ready</h3>
+                    <p className="text-zinc-500 text-xs leading-relaxed">Specially treated and packed for long-distance international transit.</p>
+                  </div>
+                </div>
 
-          {/* Availability Calendar */}
-          <div className="text-left border-t border-zinc-100 pt-8 w-full">
-            <h4 className="font-bold text-zinc-400 uppercase text-[10px] tracking-widest mb-6">Availability Calendar</h4>
-            <div className="flex flex-wrap gap-3">
-              {['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'].map((month) => (
-                <span key={month} className="w-10 h-10 flex items-center justify-center rounded-full border border-zinc-200 text-[#0d631b] text-xs font-bold bg-[#0d631b]/5">{month}</span>
-              ))}
+                {/* Card 4: Audit-Ready */}
+                <div className="bg-white p-8 rounded-[1.5rem] shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-zinc-100 flex flex-col gap-5 text-left">
+                  <div className="w-10 h-10 bg-[#0d631b]/8 rounded-xl flex items-center justify-center text-[#0d631b]">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                      <polyline points="14 2 14 8 20 8"/>
+                      <line x1="16" y1="13" x2="8" y2="13"/>
+                      <line x1="16" y1="17" x2="8" y2="17"/>
+                      <polyline points="10 9 9 9 8 9"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-zinc-900 text-lg mb-2">Audit-Ready</h3>
+                    <p className="text-zinc-500 text-xs leading-relaxed">Instant documentation access for distributors and retail chains.</p>
+                  </div>
+                </div>
+
+              </div>
+
+              {/* Right Column: Dispatch Windows & Supply Capability */}
+              <div className="lg:col-span-5 flex flex-col gap-6">
+                
+                {/* Dispatch Windows Card */}
+                <div className="bg-white p-8 rounded-[2rem] shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-zinc-100 text-left">
+                  <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-[0.2em] block mb-8">Dispatch Windows</span>
+                  <div className="grid grid-cols-4 gap-4">
+                    {['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'].map((month) => {
+                      const isActive = ['Jan', 'Feb', 'Mar', 'Jul', 'Aug', 'Sep', 'Dec'].includes(month);
+                      return (
+                        <div
+                          key={month}
+                          className={`aspect-square rounded-2xl flex items-center justify-center text-xs font-bold transition-all shadow-[0_4px_12px_rgba(0,0,0,0.02)] ${
+                            isActive
+                              ? 'bg-[#7e1a12] text-white shadow-[0_8px_16px_rgba(126,26,18,0.2)]'
+                              : 'bg-white text-zinc-300 border border-zinc-100'
+                          }`}
+                        >
+                          {month}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {/* Supply Capability Card */}
+                <div className="bg-[#0d631b] p-8 rounded-[2rem] text-white text-left relative overflow-hidden flex flex-col gap-3 shadow-[0_12px_24px_rgba(13,99,27,0.15)]">
+                  {/* Decorative circle overlay */}
+                  <div className="absolute right-0 top-0 w-24 h-24 bg-white/5 rounded-full -mr-8 -mt-8"></div>
+                  <div className="absolute right-6 bottom-0 w-32 h-32 bg-white/5 rounded-full -mr-4 -mb-16"></div>
+                  
+                  <span className="text-[9px] font-bold text-white/50 uppercase tracking-[0.2em] block">Supply Capability</span>
+                  <h3 className="text-3xl font-extrabold font-sans">365 Days</h3>
+                  <p className="text-white/80 text-xs font-normal leading-relaxed">Continuous year-round availability for global partners.</p>
+                </div>
+
+              </div>
+
             </div>
           </div>
         </section>
@@ -424,82 +488,8 @@ const PomegranateFruit = () => {
           </div>
         </section>
 
-        {/* FEATURES */}
-        <section className="section-fruit" id="features">
-          <div className="max-w-2xl mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-4 md:mb-6 uppercase tracking-tighter">
-              Why <span className="text-[#9ef295]">Choose Us</span>
-            </h2>
-            <div className="w-16 md:w-24 h-1 md:h-1.5 bg-[#9ef295]"></div>
-          </div>
 
-          <div className="features-grid-fruit">
-            <div className="feature-card-fruit">
-              <div className="feature-icon-fruit">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                  <path d="M11 2C6.03 2 2 6.03 2 11s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9z" fill="#D85A30" opacity="0.25"/>
-                  <path d="M7 11l3 3 5-5" stroke="#D85A30" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
-              <h3>Global MRL Compliant</h3>
-              <p>Rigorous residue testing ensures compliance with EU, UK, and international pesticide standards.</p>
-            </div>
 
-            <div className="feature-card-fruit">
-              <div className="feature-icon-fruit">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                  <rect x="3" y="3" width="7" height="7" rx="1.5" fill="#D85A30" opacity="0.3"/>
-                  <rect x="12" y="3" width="7" height="7" rx="1.5" fill="#D85A30" opacity="0.15"/>
-                  <rect x="3" y="12" width="7" height="7" rx="1.5" fill="#D85A30" opacity="0.15"/>
-                  <rect x="12" y="12" width="7" height="7" rx="1.5" fill="#D85A30" opacity="0.3"/>
-                </svg>
-              </div>
-              <h3>Cold-Chain Maintained</h3>
-              <p>Continuous cold-chain transport from packhouse to shipping container protects fruit freshness and skin gloss.</p>
-            </div>
-
-            <div className="feature-card-fruit">
-              <div className="feature-icon-fruit">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                  <path d="M11 3l2.2 5.5H19l-4.6 3.4 1.8 5.5L11 14l-5.2 3.4 1.8-5.5L3 8.5h5.8L11 3z" fill="#D85A30" opacity="0.3" stroke="#D85A30" strokeWidth="1.2" strokeLinejoin="round"/>
-                </svg>
-              </div>
-              <h3>Vibrant Bhagwa Breed</h3>
-              <p>Selected for deep ruby red skin, high seed counts, and sweet, juicy interior arils.</p>
-            </div>
-
-            <div className="feature-card-fruit">
-              <div className="feature-icon-fruit">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                  <path d="M4 6h14M4 11h14M4 16h9" stroke="#D85A30" strokeWidth="1.8" strokeLinecap="round"/>
-                </svg>
-              </div>
-              <h3>Full Traceability</h3>
-              <p>Every carton is barcode-linked back to the specific contract farm and harvest day for total confidence.</p>
-            </div>
-
-            <div className="feature-card-fruit">
-              <div className="feature-icon-fruit">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                  <path d="M11 4v14M4 11h14" stroke="#D85A30" strokeWidth="1.8" strokeLinecap="round"/>
-                  <circle cx="11" cy="11" r="8" stroke="#D85A30" strokeWidth="1.2" opacity="0.4"/>
-                </svg>
-              </div>
-              <h3>Automated Grading</h3>
-              <p>State-of-the-art sorting lines group fruit precisely by size, color density, and surface quality.</p>
-            </div>
-
-            <div className="feature-card-fruit">
-              <div className="feature-icon-fruit">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                  <path d="M3 17l4-8 4 5 3-3 5 6" stroke="#D85A30" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
-              <h3>Custom Export Packing</h3>
-              <p>Shipped in corrugated, moisture-resistant packaging designed for long sea transits.</p>
-            </div>
-          </div>
-        </section>
 
         {/* CTA STRIP */}
         <section id="contact" className="py-20 text-center border-t border-zinc-200" style={{ background: '#FAF7F2' }}>
