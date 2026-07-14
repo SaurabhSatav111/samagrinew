@@ -427,10 +427,10 @@ const IqfArils = () => {
         {/* FEATURES */}
         <section className="section-iqf" id="features">
           <div className="max-w-2xl mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-4 md:mb-6 uppercase tracking-tighter">
-              Why <span className="text-[#9ef295]">Choose Us</span>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-zinc-900 mb-4 md:mb-6 uppercase tracking-tighter">
+              Why <span className="text-[#0d631b]">Choose Us</span>
             </h2>
-            <div className="w-16 md:w-24 h-1 md:h-1.5 bg-[#9ef295]"></div>
+            <div className="w-16 md:w-24 h-1 md:h-1.5 bg-[#0d631b]"></div>
           </div>
 
           <div className="features-grid-iqf">
