@@ -12,7 +12,7 @@ const DriedArils = () => {
               Shelf-Stable Excellence
             </span>
             <h1 className="text-4xl md:text-7xl font-serif font-bold text-white leading-[0.9] mb-6 md:mb-8 uppercase tracking-tighter">
-              Dried <br/><span className="text-[#9ef295]">Arils</span>
+              Dried <span className="text-[#9ef295]">Arils</span>
             </h1>
             
             <p className="text-white/80 text-base md:text-lg leading-relaxed font-sans mb-12 font-light">
