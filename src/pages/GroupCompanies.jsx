@@ -42,11 +42,10 @@ const GroupCompanies = () => {
         </div>
       </section>
 
-      {/* Our Partners / Affiliated Organizations */}
+      {/* Affiliated Organizations */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-12 overflow-hidden border-b border-zinc-100">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <span className="text-primary font-bold text-xs uppercase tracking-widest bg-primary/5 px-4 py-1.5 rounded-full">Partners & Affiliates</span>
             <h2 className="text-3xl md:text-5xl font-serif font-bold text-zinc-800 mt-4 uppercase tracking-tighter">Affiliated Organizations</h2>
             <div className="w-20 h-1 bg-secondary mx-auto mt-4"></div>
           </div>
@@ -57,7 +56,6 @@ const GroupCompanies = () => {
               <img src="/assets/avocado.jpg" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="West-In-Avo" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent"></div>
               <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end text-left">
-                <span className="text-[#9ef295] font-bold text-[10px] uppercase tracking-widest mb-2">Domestic Brand</span>
                 <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4 leading-tight">West-In-Avo</h3>
                 <p className="text-white/70 text-sm leading-relaxed group-hover:text-white transition-colors">Premium Hass avocados grown in our domestic farms, tree-ripened quality for every table.</p>
               </div>
@@ -68,7 +66,6 @@ const GroupCompanies = () => {
               <img src="/assets/sam_berry_basket.png" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Sam Berry" onError={(e) => { e.target.src = '/assets/berries.jpg' }} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent"></div>
               <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end text-left">
-                <span className="text-[#9ef295] font-bold text-[10px] uppercase tracking-widest mb-2">Domestic Brand</span>
                 <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4 leading-tight">Sam Berry</h3>
                 <p className="text-white/70 text-sm leading-relaxed group-hover:text-white transition-colors">A lush assortment of locally sourced berries and seasonal gift baskets.</p>
               </div>
@@ -79,7 +76,6 @@ const GroupCompanies = () => {
               <img src="/assets/almond.jpg" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Sam's Delight" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent"></div>
               <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end text-left">
-                <span className="text-[#9ef295] font-bold text-[10px] uppercase tracking-widest mb-2">Domestic Brand</span>
                 <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4 leading-tight">Sam's Delight</h3>
                 <p className="text-white/70 text-sm leading-relaxed group-hover:text-white transition-colors">Our flagship range of premium almonds and nutritious dry fruits.</p>
               </div>
@@ -90,7 +86,6 @@ const GroupCompanies = () => {
               <img src="https://images.unsplash.com/photo-1498557850523-fd3d118b962e?q=80&w=800" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Sam Alpine" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent"></div>
               <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end text-left">
-                <span className="text-[#9ef295] font-bold text-[10px] uppercase tracking-widest mb-2">Domestic Brand</span>
                 <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4 leading-tight">Sam Alpine</h3>
                 <p className="text-white/70 text-sm leading-relaxed group-hover:text-white transition-colors">High-altitude blueberries grown for intense flavor and nutrition.</p>
               </div>
@@ -101,7 +96,6 @@ const GroupCompanies = () => {
               <img src="/assets/tulip.jpg" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Ozar Tulip" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent"></div>
               <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end text-left">
-                <span className="text-[#9ef295] font-bold text-[10px] uppercase tracking-widest mb-2">Domestic Brand</span>
                 <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4 leading-tight">Ozar Tulip</h3>
                 <p className="text-white/70 text-sm leading-relaxed group-hover:text-white transition-colors">Premium floriculture vertical specializing in exotic Dutch tulips.</p>
               </div>
@@ -112,7 +106,6 @@ const GroupCompanies = () => {
               <img src="/assets/pomogranatewine.png" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Sam's Wine" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent"></div>
               <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end text-left">
-                <span className="text-[#9ef295] font-bold text-[10px] uppercase tracking-widest mb-2">Domestic Brand</span>
                 <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4 leading-tight">Sam's Wine</h3>
                 <p className="text-white/70 text-sm leading-relaxed group-hover:text-white transition-colors">Artisanal fruit wines crafted from our finest pomegranate harvests.</p>
               </div>
