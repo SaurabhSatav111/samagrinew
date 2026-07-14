@@ -2,30 +2,31 @@ import React, { useState } from 'react';
 import indiaMapData from './indiaMapData.json';
 
 const COUNTRIES_LEFT = [
-  { name: 'Ireland', code: 'ie', x: 190, y: 30, desc: 'Premium export market for fresh whole fruit and arils.' },
-  { name: 'USA', code: 'us', x: 160, y: 75, desc: 'Premier market for our fresh pomegranate arils and whole-fruit exports.' },
-  { name: 'UK', code: 'gb', x: 130, y: 120, desc: 'Key distribution hub supplying premium fresh produce to major UK retailers.' },
-  { name: 'Netherlands', code: 'nl', x: 110, y: 165, desc: 'Strategic cold-chain gateway for our European fresh-produce logistics.' },
-  { name: 'Germany', code: 'de', x: 100, y: 210, desc: 'High-quality requirements partner for fresh agricultural supply.' },
-  { name: 'Belgium', code: 'be', x: 110, y: 255, desc: 'Core European wholesale market with direct retail channels.' },
-  { name: 'France', code: 'fr', x: 130, y: 300, desc: 'Retail and foodservice partnerships across the French premium segment.' },
-  { name: 'Switzerland', code: 'ch', x: 160, y: 345, desc: 'Premium market demanding high-compliance agricultural products.' },
-  { name: 'Spain', code: 'es', x: 190, y: 390, desc: 'Growing footprint in the Iberian Peninsula fresh-produce sector.' },
-  { name: 'Poland', code: 'pl', x: 220, y: 435, desc: 'Key distribution market for Central and Eastern European logistics.' }
+  { name: 'Norway', code: 'no', x: 200, y: 30, desc: 'Scandinavia market with high quality fresh produce demand.' },
+  { name: 'Ireland', code: 'ie', x: 180, y: 70, desc: 'Premium export market for fresh whole fruit and arils.' },
+  { name: 'USA', code: 'us', x: 160, y: 110, desc: 'Premier market for our fresh pomegranate arils and whole-fruit exports.' },
+  { name: 'UK', code: 'gb', x: 140, y: 150, desc: 'Key distribution hub supplying premium fresh produce to major UK retailers.' },
+  { name: 'Netherlands', code: 'nl', x: 120, y: 190, desc: 'Strategic cold-chain gateway for our European fresh-produce logistics.' },
+  { name: 'Germany', code: 'de', x: 110, y: 230, desc: 'High-quality requirements partner for fresh agricultural supply.' },
+  { name: 'Belgium', code: 'be', x: 110, y: 270, desc: 'Core European wholesale market with direct retail channels.' },
+  { name: 'France', code: 'fr', x: 120, y: 310, desc: 'Retail and foodservice partnerships across the French premium segment.' },
+  { name: 'Switzerland', code: 'ch', x: 140, y: 350, desc: 'Premium market demanding high-compliance agricultural products.' },
+  { name: 'Austria', code: 'at', x: 160, y: 390, desc: 'Key central European market for certified fresh produce.' },
+  { name: 'Spain', code: 'es', x: 180, y: 430, desc: 'Growing footprint in the Iberian Peninsula fresh-produce sector.' },
+  { name: 'Poland', code: 'pl', x: 200, y: 470, desc: 'Key distribution market for Central and Eastern European logistics.' }
 ];
 
 const COUNTRIES_RIGHT = [
-  { name: 'Japan', code: 'jp', x: 770, y: 30, desc: 'Premium market recognizing our high quality standards and safety compliance.' },
-  { name: 'Hong Kong', code: 'hk', x: 800, y: 72, desc: 'Gateway to South-East Asian premium fresh produce markets.' },
-  { name: 'Singapore', code: 'sg', x: 820, y: 114, desc: 'High-density premium retail market for fresh cut coconut chunks and arils.' },
-  { name: 'Australia', code: 'au', x: 830, y: 156, desc: 'Premium Southern Hemisphere partner for year-round fresh fruit imports.' },
-  { name: 'New Zealand', code: 'nz', x: 830, y: 198, desc: 'Growing market for our shelf-stable and individually quick frozen (IQF) arils.' },
-  { name: 'Thailand', code: 'th', x: 820, y: 240, desc: 'Expanding partnership in South-East Asia for tropical processed fruits.' },
-  { name: 'Myanmar', code: 'mm', x: 800, y: 282, desc: 'South-East Asian partner for region-specific fresh agricultural exports.' },
-  { name: 'UAE', code: 'ae', x: 770, y: 324, desc: 'Primary Middle East distribution hub for our fresh and processed range.' },
-  { name: 'Qatar', code: 'qa', x: 730, y: 366, desc: 'Premium GCC market demanding high-care certified horticultural products.' },
-  { name: 'Egypt', code: 'eg', x: 680, y: 408, desc: 'Key African market for processed fresh agricultural exports.' },
-  { name: 'Ghana', code: 'gh', x: 620, y: 450, desc: 'West African distribution partner for fresh produce supply.' }
+  { name: 'South Korea', code: 'kr', x: 770, y: 30, desc: 'High-growth East Asian market recognizing our safety standards.' },
+  { name: 'Hong Kong', code: 'hk', x: 800, y: 78, desc: 'Gateway to South-East Asian premium fresh produce markets.' },
+  { name: 'Singapore', code: 'sg', x: 820, y: 126, desc: 'High-density premium retail market for fresh cut coconut chunks and arils.' },
+  { name: 'Australia', code: 'au', x: 830, y: 174, desc: 'Premium Southern Hemisphere partner for year-round fresh fruit imports.' },
+  { name: 'New Zealand', code: 'nz', x: 830, y: 222, desc: 'Growing market for our shelf-stable and individually quick frozen (IQF) arils.' },
+  { name: 'Thailand', code: 'th', x: 820, y: 270, desc: 'Expanding partnership in South-East Asia for tropical processed fruits.' },
+  { name: 'UAE', code: 'ae', x: 800, y: 318, desc: 'Primary Middle East distribution hub for our fresh and processed range.' },
+  { name: 'Saudi Arabia', code: 'sa', x: 770, y: 366, desc: 'Key GCC market with high volume import capacity for fresh fruits.' },
+  { name: 'Qatar', code: 'qa', x: 730, y: 414, desc: 'Premium GCC market demanding high-care certified horticultural products.' },
+  { name: 'Egypt', code: 'eg', x: 680, y: 462, desc: 'Key African market for processed fresh agricultural exports.' }
 ];
 
 const GlobalPresenceMap = () => {
