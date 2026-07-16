@@ -25,6 +25,7 @@ import PomegranateFruit from './pages/PomegranateFruit'
 import WholeFruit from './pages/WholeFruit'
 import CoconutChunks from './pages/CoconutChunks'
 import WestInAvo from './pages/WestInAvo'
+import StyleGuide from './pages/StyleGuide'
 
 // Scroll to top helper when navigating routes
 function ScrollToTop() {
@@ -87,6 +88,9 @@ function App() {
           {/* Conclusion */}
           <Route path="/conclusion" element={<InterfaceConclusion />} />
           <Route path="/interface-conclusion" element={<InterfaceConclusion />} />
+          {/* Style Guide */}
+          <Route path="/style-guide" element={<StyleGuide />} />
+          <Route path="/styleguide" element={<StyleGuide />} />
           
           {/* Generic Product Detail */}
           <Route path="/product/:id" element={<ProductDetail />} />
