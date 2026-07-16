@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
               <div className="col-span-1 md:col-span-2">
                   <div className="mb-6">
-                      <img src="/assets/logo2.png" className="h-14 w-auto" alt="Sam Agri Logo" onError={(e) => { e.target.src = 'https://via.placeholder.com/120x40?text=SAM+AGRI' }} />
+                      <img src="/assets/logo2.png" className="h-14 w-auto" style={{ filter: 'brightness(0) invert(1)' }} alt="Sam Agri Logo" onError={(e) => { e.target.src = 'https://via.placeholder.com/120x40?text=SAM+AGRI' }} />
                   </div>
                   <p className="text-white/60 max-w-md leading-relaxed text-sm">
                       India's largest integrated exporter of fresh fruits and vegetables. Pioneering excellence in fresh produce for the global market for over 25 years.
