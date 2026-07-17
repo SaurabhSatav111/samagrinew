@@ -26,6 +26,7 @@ import WholeFruit from './pages/WholeFruit'
 import CoconutChunks from './pages/CoconutChunks'
 import WestInAvo from './pages/WestInAvo'
 
+
 // Scroll to top helper when navigating routes
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -66,7 +67,7 @@ function App() {
           <Route path="/locations" element={<Locations />} />
           <Route path="/global-presence" element={<Locations />} />
           <Route path="/advantage" element={<Advantage />} />
-          
+
           {/* Assortment & Product Pages */}
           <Route path="/avocado" element={<Avocado />} />
           <Route path="/coconut-chunks" element={<CoconutChunks />} />
@@ -78,16 +79,17 @@ function App() {
           <Route path="/pomegranate-fruit" element={<PomegranateFruit />} />
           <Route path="/whole-fruit" element={<WholeFruit />} />
           <Route path="/west-in-avo" element={<WestInAvo />} />
-          
+
           {/* Corporate Pages */}
           <Route path="/group-companies" element={<GroupCompanies />} />
           <Route path="/infrastructure" element={<Infrastructure />} />
           <Route path="/contact-us" element={<ContactUs />} />
-          
+
           {/* Conclusion */}
           <Route path="/conclusion" element={<InterfaceConclusion />} />
           <Route path="/interface-conclusion" element={<InterfaceConclusion />} />
-          
+
+
           {/* Generic Product Detail */}
           <Route path="/product/:id" element={<ProductDetail />} />
         </Routes>
