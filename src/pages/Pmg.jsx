@@ -158,6 +158,7 @@ const Pmg = () => {
         /* ── ATTRIBUTES ── */
         .section-pmg {
           padding: 5rem 5rem;
+          background: #ffffff;
           animation: fadeUpPmg 0.7s ease both;
         }
         .section-header-pmg {
@@ -199,12 +200,12 @@ const Pmg = () => {
         }
         .spec-cell-pmg {
           padding: 1.5rem 1.5rem 1.8rem;
-          background: var(--white);
+          background: #FAF7F2;
           border-right: 1px solid var(--border);
           transition: background 0.2s;
         }
         .spec-cell-pmg:last-child { border-right: none; }
-        .spec-cell-pmg:hover { background: #FFF8F5; }
+        .spec-cell-pmg:hover { background: var(--peel-light); }
         
         .spec-label-pmg {
           font-size: 10px; font-weight: 500; letter-spacing: 0.1em;
@@ -268,15 +269,17 @@ const Pmg = () => {
           gap: 1.5rem;
         }
         .feature-card-pmg {
-          background: var(--white);
+          background: #FAF7F2;
           border: 1px solid var(--border);
           border-radius: var(--radius);
           padding: 1.75rem;
-          transition: border-color 0.2s, transform 0.2s;
+          transition: border-color 0.2s, transform 0.2s, background-color 0.2s, box-shadow 0.2s;
         }
         .feature-card-pmg:hover {
           border-color: rgba(201,75,30,0.3);
           transform: translateY(-3px);
+          background: var(--white);
+          box-shadow: 0 10px 30px rgba(0,0,0,0.04);
         }
         .feature-icon-pmg {
           width: 44px; height: 44px;
@@ -366,10 +369,10 @@ const Pmg = () => {
         {/* ATTRIBUTES */}
         <section className="section-pmg" id="attributes">
           <div className="max-w-2xl mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-4 md:mb-6 uppercase tracking-tighter">
-              Product <span className="text-[#9ef295]">Attributes</span>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-[#1a1410] mb-4 md:mb-6 uppercase tracking-tighter">
+              Product <span className="text-[#0d631b]">Attributes</span>
             </h2>
-            <div className="w-16 md:w-24 h-1 md:h-1.5 bg-[#9ef295]"></div>
+            <div className="w-16 md:w-24 h-1 md:h-1.5 bg-[#0d631b]"></div>
           </div>
 
           <div className="badges-grid-pmg">
@@ -430,10 +433,10 @@ const Pmg = () => {
         {/* FEATURES */}
         <section className="section-pmg" id="features">
           <div className="max-w-2xl mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-4 md:mb-6 uppercase tracking-tighter">
-              Why <span className="text-[#9ef295]">Choose Us</span>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-[#1a1410] mb-4 md:mb-6 uppercase tracking-tighter">
+              Why <span className="text-[#0d631b]">Choose Us</span>
             </h2>
-            <div className="w-16 md:w-24 h-1 md:h-1.5 bg-[#9ef295]"></div>
+            <div className="w-16 md:w-24 h-1 md:h-1.5 bg-[#0d631b]"></div>
           </div>
 
           <div className="features-grid-pmg">
