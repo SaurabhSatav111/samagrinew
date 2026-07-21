@@ -54,6 +54,24 @@ const Infrastructure = () => {
               </ul>
             </div>
           </div>
+
+          {/* Bangalore */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
+            <div className="space-y-8 md:space-y-12 order-2 md:order-1">
+              <h2 className="text-2xl md:text-4xl font-serif font-bold text-primary uppercase tracking-tighter">Bangalore <br /><span className="text-secondary">Logistics Hub</span></h2>
+              <p className="text-sm md:text-base text-zinc-600 leading-relaxed font-sans">
+                Strategically located near key transport networks, our Bangalore packhouse and logistics center ensures rapid routing and direct air/sea cargo connectivity for exports.
+              </p>
+              <ul className="space-y-4 md:space-y-6">
+                <li className="flex items-center gap-3 md:gap-4 text-zinc-800 font-bold text-sm md:text-base"><i className="fas fa-check-circle text-[#9ef295]"></i> Direct Cargo Connectivity</li>
+                <li className="flex items-center gap-3 md:gap-4 text-zinc-800 font-bold text-sm md:text-base"><i className="fas fa-check-circle text-[#9ef295]"></i> High-Speed Sorting & Grading</li>
+                <li className="flex items-center gap-3 md:gap-4 text-zinc-800 font-bold text-sm md:text-base"><i className="fas fa-check-circle text-[#9ef295]"></i> Cold Chain Storage Packhouse</li>
+              </ul>
+            </div>
+            <div className="rounded-3xl md:rounded-[3rem] overflow-hidden shadow-2xl order-1 md:order-2 border border-zinc-200">
+              <img src="/assets/infrastructure_facility.png" className="w-full h-auto" alt="Bangalore Facility" onError={(e) => { e.target.src = 'https://via.placeholder.com/600x400?text=Bangalore+Facility' }} />
+            </div>
+          </div>
         </div>
       </section>
     </main>

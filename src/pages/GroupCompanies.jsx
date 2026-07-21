@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const ENTITIES = [
   {
@@ -12,7 +13,8 @@ const ENTITIES = [
       'Global G.A.P. Certified'
     ],
     img: '/assets/avocado.jpg',
-    fallbackImg: 'https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=800'
+    fallbackImg: 'https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=800',
+    link: '/west-in-avo'
   },
   {
     titleFirst: 'Sam',
@@ -24,7 +26,8 @@ const ENTITIES = [
       'Eco-Friendly Packaging'
     ],
     img: '/assets/sam_berry_basket.png',
-    fallbackImg: '/assets/berries.jpg'
+    fallbackImg: '/assets/berries.jpg',
+    link: '/contact-us'
   },
   {
     titleFirst: "Sam's",
@@ -36,7 +39,8 @@ const ENTITIES = [
       'Hygienically Sorted & Packed'
     ],
     img: '/assets/almond.jpg',
-    fallbackImg: 'https://images.unsplash.com/photo-1508061253366-f7da158b6d46?q=80&w=800'
+    fallbackImg: 'https://images.unsplash.com/photo-1508061253366-f7da158b6d46?q=80&w=800',
+    link: '/contact-us'
   },
   {
     titleFirst: 'Sam',
@@ -48,7 +52,8 @@ const ENTITIES = [
       'Superfood Certified'
     ],
     img: 'https://images.unsplash.com/photo-1498557850523-fd3d118b962e?q=80&w=800',
-    fallbackImg: 'https://images.unsplash.com/photo-1498557850523-fd3d118b962e?q=80&w=800'
+    fallbackImg: 'https://images.unsplash.com/photo-1498557850523-fd3d118b962e?q=80&w=800',
+    link: '/contact-us'
   },
   {
     titleFirst: 'Ozar',
@@ -60,7 +65,8 @@ const ENTITIES = [
       'Premium Cut Flower Exports'
     ],
     img: '/assets/tulip.jpg',
-    fallbackImg: 'https://images.unsplash.com/photo-1520763185298-1b434c919102?q=80&w=800'
+    fallbackImg: 'https://images.unsplash.com/photo-1520763185298-1b434c919102?q=80&w=800',
+    link: '/contact-us'
   },
   {
     titleFirst: "Sam's",
@@ -72,7 +78,8 @@ const ENTITIES = [
       'Rich Antioxidant Profile'
     ],
     img: '/assets/pomogranatewine.png',
-    fallbackImg: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=800'
+    fallbackImg: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=800',
+    link: '/contact-us'
   }
 ]
 
@@ -151,6 +158,18 @@ const GroupCompanies = () => {
                         </span>
                       </div>
                     ))}
+                  </div>
+
+                  <div className="mt-4">
+                    <Link 
+                      to={entity.link} 
+                      className="inline-flex items-center gap-2 px-8 py-3 bg-[#0d631b] text-white hover:bg-[#7e1a12] rounded-full text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
+                    >
+                      Visit Us
+                      <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
+                    </Link>
                   </div>
                 </div>
 

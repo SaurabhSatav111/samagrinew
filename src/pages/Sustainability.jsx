@@ -174,7 +174,7 @@ const Sustainability = () => {
           <span className="text-[#9ef295] font-bold uppercase tracking-[0.3em] text-[10px] md:text-xs mb-4 block">
             Our Responsibility
           </span>
-          <h1 className="text-4xl md:text-6xl font-sans font-black text-white leading-tight mb-6 uppercase tracking-tighter">
+          <h1 className="text-4xl md:text-6xl font-sans font-black text-white leading-tight mb-6 uppercase tracking-normal">
             Responsible Growth from <br/>
             <span className="font-bold text-[#9ef295]">Root to Market</span>
           </h1>

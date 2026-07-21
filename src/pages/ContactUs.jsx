@@ -65,7 +65,7 @@ const ContactUs = () => {
 
             <div className="relative z-10 animate-in">
               <span className="text-[#9ef295] font-display font-bold uppercase tracking-[0.4em] text-[10px] mb-4 md:mb-6 block">Connect With Us</span>
-              <h1 className="text-4xl md:text-5xl lg:text-7xl font-serif font-bold text-white leading-none uppercase tracking-tighter mb-8 md:mb-12">
+              <h1 className="text-4xl md:text-5xl lg:text-7xl font-serif font-bold text-white leading-none uppercase tracking-normal mb-8 md:mb-12">
                 GET IN <br /><span className="text-[#9ef295]">TOUCH</span>
               </h1>
 

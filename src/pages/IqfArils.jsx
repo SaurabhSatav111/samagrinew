@@ -140,6 +140,25 @@ const IqfArils = () => {
         }
         .btn-ghost-iqf:hover { color: #9ef295; }
 
+        .btn-outline-iqf {
+          border: 2px solid #5c4a3a;
+          color: #5c4a3a;
+          padding: 12px 30px;
+          border-radius: 99px;
+          font-family: 'Outfit', sans-serif;
+          font-size: 13px; font-weight: 700;
+          letter-spacing: 0.12em; text-transform: uppercase;
+          cursor: pointer; text-decoration: none;
+          transition: all 0.2s;
+          display: inline-block;
+        }
+        .btn-outline-iqf:hover {
+          background: #7e1a12;
+          border-color: #7e1a12;
+          color: #fff;
+          transform: translateY(-1px);
+        }
+
         /* ── ATTRIBUTES ── */
         .section-iqf {
           padding: 5rem 5rem;
@@ -513,7 +532,7 @@ const IqfArils = () => {
             <p className="text-sm md:text-base text-[#5c4a3a] mb-10">Request a sample kit or bulk pricing. Our team responds within 24 hours.</p>
             <div className="flex gap-4 justify-center flex-wrap">
               <a href="mailto:sales@samagrigroup.com" className="btn-primary-iqf">Request a Sample</a>
-              <a href="tel:+910000000000" className="btn-ghost-iqf text-[#5c4a3a] border-zinc-400 self-center">+91 00000 00000</a>
+              <a href="tel:+910000000000" className="btn-outline-iqf self-center">+91 00000 00000</a>
             </div>
           </div>
         </section>
