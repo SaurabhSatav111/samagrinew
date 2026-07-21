@@ -11,7 +11,7 @@ const Footer = () => {
         }
       `}</style>
       <footer className="glass-footer text-white pt-10 md:pt-14 pb-8 px-6 md:px-12 mt-0 font-sans relative z-10" style={{ fontFamily: "'Outfit', sans-serif" }}>
-          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12">
               <div className="col-span-1 md:col-span-2">
                   <div className="mb-6">
                       <img src="/assets/logo2.png" className="h-14 w-auto" style={{ filter: 'brightness(0) invert(1)' }} alt="Sam Agri Logo" onError={(e) => { e.target.src = 'https://via.placeholder.com/120x40?text=SAM+AGRI' }} />
@@ -41,6 +41,15 @@ const Footer = () => {
                       <li><Link to="/sustainability" className="text-white/40 hover:text-white transition-colors">Sustainability</Link></li>
                       <li><Link to="/contact-us" className="text-white/40 hover:text-white transition-colors">Contact Us</Link></li>
                   </ul>
+              </div>
+
+              <div className="flex flex-col items-start md:items-end">
+                  <div className="flex flex-col items-start">
+                      <h5 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#9ef295] mb-8">Scan QR</h5>
+                      <div className="bg-white p-2.5 rounded-2xl shadow-xl inline-block border border-white/10">
+                          <img src="/qr.jpeg" className="w-24 h-24 object-contain rounded-lg" alt="QR Code" onError={(e) => { e.target.src = 'https://via.placeholder.com/100x100?text=QR+Code' }} />
+                      </div>
+                  </div>
               </div>
           </div>
           <div className="max-w-7xl mx-auto pt-8 mt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
