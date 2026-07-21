@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { 
   Leaf, Handshake, Droplet, ShieldCheck, Sun, Eye, Award, 
@@ -7,6 +7,10 @@ import {
 } from 'lucide-react'
 
 const Sustainability = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   // Main Tabs State: 'environment', 'women-empowerment', 'ethical-sourcing', 'sam-foundation'
   const [activeTab, setActiveTab] = useState('environment')
 
