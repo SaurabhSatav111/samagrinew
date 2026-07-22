@@ -135,7 +135,7 @@ const DriedArils = () => {
         <div className="max-w-4xl mx-auto">
           <div className="w-16 h-1 bg-secondary mx-auto mb-10"></div>
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-zinc-900 mb-10 leading-tight">A premium, shelf-stable ingredient with strong consumer appeal.</h2>
-          <button className="px-12 py-5 bg-primary text-white rounded-full font-bold tracking-widest uppercase hover:bg-zinc-900 transition-all shadow-xl">Request Samples</button>
+          <button className="px-12 py-5 bg-primary text-white rounded-full font-bold tracking-widest uppercase hover:bg-zinc-900 transition-all shadow-xl">Request Spec & Quote</button>
         </div>
       </section>
     </main>

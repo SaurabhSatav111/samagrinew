@@ -531,7 +531,7 @@ const IqfArils = () => {
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#1a1410] mb-4 leading-tight">Ready to source at scale?</h2>
             <p className="text-sm md:text-base text-[#5c4a3a] mb-10">Request a sample kit or bulk pricing. Our team responds within 24 hours.</p>
             <div className="flex gap-4 justify-center flex-wrap">
-              <a href="mailto:sales@samagrigroup.com" className="btn-primary-iqf">Request a Sample</a>
+              <a href="mailto:sales@samagrigroup.com" className="btn-primary-iqf">Request Spec & Quote</a>
               <a href="tel:+910000000000" className="btn-outline-iqf self-center">+91 00000 00000</a>
             </div>
           </div>
