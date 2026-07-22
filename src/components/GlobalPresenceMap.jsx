@@ -98,7 +98,7 @@ const GlobalPresenceMap = () => {
                   stroke="#10b981"
                   strokeWidth={isHovered ? 2.5 : 1.5}
                   strokeDasharray="6,6"
-                  className={`connection-curve ${isHovered ? 'active' : ''}`}
+                  className="connection-curve active"
                   style={{
                     opacity: hoveredCountry ? (isHovered ? 1 : 0.15) : 0.45
                   }}
@@ -119,7 +119,7 @@ const GlobalPresenceMap = () => {
                   stroke="#10b981"
                   strokeWidth={isHovered ? 2.5 : 1.5}
                   strokeDasharray="6,6"
-                  className={`connection-curve ${isHovered ? 'active' : ''}`}
+                  className="connection-curve active"
                   style={{
                     opacity: hoveredCountry ? (isHovered ? 1 : 0.15) : 0.45
                   }}
