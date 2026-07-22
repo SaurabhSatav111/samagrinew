@@ -75,13 +75,13 @@ const GlobalPresenceMap = () => {
         }
       `}} />
 
-      {/* Desktop View */}
-      <div className="hidden lg:block relative w-full p-8 bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden">
+      {/* Interactive Map View (Horizontal scrolling on mobile, full width on desktop) */}
+      <div className="relative w-full p-4 md:p-8 bg-white rounded-3xl border border-slate-200 shadow-xl overflow-x-auto scrollbar-none">
         {/* SVG Layer */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1000 500"
-          className="w-full h-auto z-10"
+          className="w-full min-w-[850px] lg:min-w-0 h-auto z-10 block"
         >
           {/* 1. Connection Curves */}
           <g>
@@ -98,8 +98,10 @@ const GlobalPresenceMap = () => {
                   stroke="#10b981"
                   strokeWidth={isHovered ? 2.5 : 1.5}
                   strokeDasharray="6,6"
-                  className="connection-curve active"
-                  opacity={isHovered ? 1 : 0.55}
+                  className={`connection-curve ${isHovered ? 'active' : ''}`}
+                  style={{
+                    opacity: hoveredCountry ? (isHovered ? 1 : 0.15) : 0.45
+                  }}
                 />
               );
             })}
@@ -117,30 +119,33 @@ const GlobalPresenceMap = () => {
                   stroke="#10b981"
                   strokeWidth={isHovered ? 2.5 : 1.5}
                   strokeDasharray="6,6"
-                  className="connection-curve active"
-                  opacity={isHovered ? 1 : 0.55}
+                  className={`connection-curve ${isHovered ? 'active' : ''}`}
+                  style={{
+                    opacity: hoveredCountry ? (isHovered ? 1 : 0.15) : 0.45
+                  }}
                 />
               );
             })}
           </g>
 
-          {/* 2. Central India Map */}
+          {/* 2. Map of India */}
           <g transform={`translate(${mapOffsetX}, ${mapOffsetY}) scale(${mapScale})`}>
             {indiaMapData.map((state) => {
               const isHighlighted = state.id === 'mh' || state.id === 'tg';
               return (
                 <path
                   key={state.id}
+                  id={`global-state-${state.id}`}
                   d={state.d}
-                  fill={isHighlighted ? 'rgba(16, 185, 129, 0.15)' : 'rgba(15, 23, 42, 0.03)'}
-                  stroke={isHighlighted ? '#10b981' : 'rgba(90, 50, 30, 0.28)'}
+                  fill={isHighlighted ? 'rgba(16, 185, 129, 0.18)' : 'rgba(15, 23, 42, 0.03)'}
+                  stroke={isHighlighted ? '#10b981' : 'rgba(148, 163, 184, 0.35)'}
                   strokeWidth={isHighlighted ? 1.5 : 0.8}
                 />
               );
             })}
           </g>
 
-          {/* 3. Location Markers */}
+          {/* 3. Glowing HQ Nodes */}
           {/* Nashik */}
           <g transform={`translate(${nashikX}, ${nashikY})`}>
             <circle r="18" fill="rgba(16, 185, 129, 0.12)" className="animate-ping" style={{ animationDuration: '3s' }} />
@@ -173,7 +178,6 @@ const GlobalPresenceMap = () => {
                 onMouseEnter={() => setHoveredCountry(c)}
                 onMouseLeave={() => setHoveredCountry(null)}
               >
-                {/* Background shadow card */}
                 <rect
                   x={c.x}
                   y={c.y}
@@ -186,7 +190,6 @@ const GlobalPresenceMap = () => {
                   className="transition-all duration-300"
                   style={{ filter: isHovered ? 'drop-shadow(0 4px 6px rgba(16,185,129,0.1))' : 'drop-shadow(0 2px 4px rgba(0,0,0,0.02))' }}
                 />
-                {/* Flag Image inside SVG */}
                 <image
                   href={`https://flagcdn.com/w40/${c.code}.png`}
                   x={c.x + 12}
@@ -195,7 +198,6 @@ const GlobalPresenceMap = () => {
                   height="14"
                   preserveAspectRatio="xMidYMid slice"
                 />
-                {/* Text Label */}
                 <text
                   x={c.x + 42}
                   y={c.y + 21}
@@ -221,7 +223,6 @@ const GlobalPresenceMap = () => {
                 onMouseEnter={() => setHoveredCountry(c)}
                 onMouseLeave={() => setHoveredCountry(null)}
               >
-                {/* Background shadow card */}
                 <rect
                   x={c.x}
                   y={c.y}
@@ -234,7 +235,6 @@ const GlobalPresenceMap = () => {
                   className="transition-all duration-300"
                   style={{ filter: isHovered ? 'drop-shadow(0 4px 6px rgba(16,185,129,0.1))' : 'drop-shadow(0 2px 4px rgba(0,0,0,0.02))' }}
                 />
-                {/* Flag Image inside SVG */}
                 <image
                   href={`https://flagcdn.com/w40/${c.code}.png`}
                   x={c.x + 12}
@@ -243,7 +243,6 @@ const GlobalPresenceMap = () => {
                   height="14"
                   preserveAspectRatio="xMidYMid slice"
                 />
-                {/* Text Label */}
                 <text
                   x={c.x + 42}
                   y={c.y + 21}
@@ -259,71 +258,6 @@ const GlobalPresenceMap = () => {
             );
           })}
         </svg>
-
-      </div>
-
-      {/* Mobile/Tablet Fallback (Vertical List) */}
-      <div className="lg:hidden w-full flex flex-col gap-6">
-        {/* Nashik Map Card for Mobile */}
-        <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-center gap-4">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 612 696"
-            className="w-full max-w-[200px] h-auto"
-          >
-            <g>
-              {indiaMapData.map((state) => {
-                const isHighlighted = state.id === 'mh' || state.id === 'tg';
-                return (
-                  <path
-                    key={state.id}
-                    d={state.d}
-                    fill={isHighlighted ? 'rgba(16, 185, 129, 0.18)' : 'rgba(15, 23, 42, 0.03)'}
-                    stroke={isHighlighted ? '#10b981' : 'rgba(148, 163, 184, 0.35)'}
-                    strokeWidth={isHighlighted ? 1.5 : 0.8}
-                  />
-                );
-              })}
-            </g>
-            <g transform={`translate(${135}, ${415})`}>
-              <circle r="14" fill="rgba(16, 185, 129, 0.25)" className="animate-pulse" />
-              <circle r="10" fill="#0d631b" stroke="#10b981" strokeWidth="2" />
-            </g>
-            <g transform={`translate(${220}, ${450})`}>
-              <circle r="14" fill="rgba(16, 185, 129, 0.25)" className="animate-pulse" />
-              <circle r="10" fill="#0d631b" stroke="#10b981" strokeWidth="2" />
-            </g>
-          </svg>
-          <div className="w-full text-center">
-            <h3 className="text-xs font-black text-slate-800 uppercase tracking-wider font-serif">INDIA HQ</h3>
-            <p className="text-[10px] text-emerald-600 font-extrabold uppercase tracking-widest mt-0.5">Nashik & Hyderabad</p>
-          </div>
-        </div>
-
-        {/* List of Countries */}
-        <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
-          <h3 className="text-sm font-black text-slate-800 uppercase tracking-wider border-b border-slate-100 pb-3 mb-4">
-            Global Export Destinations
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {[...COUNTRIES_LEFT, ...COUNTRIES_RIGHT].map((c) => (
-              <div
-                key={c.code}
-                className="flex items-center gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100"
-              >
-                <img
-                  src={`https://flagcdn.com/w40/${c.code}.png`}
-                  className="w-6 h-4 object-cover rounded-sm shadow-sm"
-                  alt={c.name}
-                />
-                <div>
-                  <h4 className="text-xs font-bold text-slate-800 uppercase tracking-wider">{c.name}</h4>
-                  <p className="text-[10px] text-slate-500 mt-0.5 leading-relaxed">{c.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </div>
   );
