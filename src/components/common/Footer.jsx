@@ -46,9 +46,17 @@ const Footer = () => {
               <div className="flex flex-col items-start md:items-end">
                   <div className="flex flex-col items-start">
                       <h5 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#9ef295] mb-8">Scan QR</h5>
-                      <div className="bg-white p-2.5 rounded-2xl shadow-xl inline-block border border-white/10">
-                          <img src="/qr.jpeg" className="w-24 h-24 object-contain rounded-lg" alt="QR Code" onError={(e) => { e.target.src = 'https://via.placeholder.com/100x100?text=QR+Code' }} />
+                      <div className="bg-white p-3 rounded-2xl shadow-xl inline-block border border-white/10">
+                          <img src="/qr.jpeg" className="w-32 h-32 object-contain rounded-lg" alt="QR Code" onError={(e) => { e.target.src = 'https://via.placeholder.com/150x150?text=QR+Code' }} />
                       </div>
+                      <a 
+                          href="https://linktr.ee/qr/702c6b48-0d60-4d57-bb91-7400ac4b3c2d" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="mt-3 w-full text-center px-4 py-2 bg-[#9ef295] text-[#0d631b] hover:bg-white hover:text-zinc-900 rounded-xl text-[10px] font-extrabold uppercase tracking-widest shadow-md transition-all duration-300"
+                      >
+                          Visit Link
+                      </a>
                   </div>
               </div>
           </div>

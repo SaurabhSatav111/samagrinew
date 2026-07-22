@@ -14,7 +14,7 @@ const ENTITIES = [
     ],
     img: '/assets/avocado.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=800',
-    link: '/west-in-avo'
+    link: 'https://www.westfaliafruit.com/'
   },
   {
     titleFirst: 'Sam',
@@ -161,15 +161,29 @@ const GroupCompanies = () => {
                   </div>
 
                   <div className="mt-4">
-                    <Link 
-                      to={entity.link} 
-                      className="inline-flex items-center gap-2 px-8 py-3 bg-[#0d631b] text-white hover:bg-[#7e1a12] rounded-full text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
-                    >
-                      Visit Us
-                      <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                      </svg>
-                    </Link>
+                    {entity.link.startsWith('http') ? (
+                      <a 
+                        href={entity.link} 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-8 py-3 bg-[#0d631b] text-white hover:bg-[#7e1a12] rounded-full text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
+                      >
+                        Visit Us
+                        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
+                      </a>
+                    ) : (
+                      <Link 
+                        to={entity.link} 
+                        className="inline-flex items-center gap-2 px-8 py-3 bg-[#0d631b] text-white hover:bg-[#7e1a12] rounded-full text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
+                      >
+                        Visit Us
+                        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
+                      </Link>
+                    )}
                   </div>
                 </div>
 
