@@ -79,7 +79,7 @@ const ENTITIES = [
     ],
     img: '/assets/pomogranatewine.png',
     fallbackImg: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=800',
-    link: '/contact-us'
+    link: 'https://samsfruitwines.com/'
   }
 ]
 
