@@ -38,7 +38,7 @@ const ContactUs = () => {
             border-radius: 1rem;
             outline: none;
             transition: all 0.3s ease;
-            font-family: 'Outfit', sans-serif;
+            font-family: 'Inter', sans-serif;
             color: #1a1c18;
         }
 

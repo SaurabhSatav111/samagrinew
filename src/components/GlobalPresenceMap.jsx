@@ -201,7 +201,7 @@ const GlobalPresenceMap = () => {
                 <text
                   x={c.x + 42}
                   y={c.y + 21}
-                  fontFamily="'Outfit', sans-serif"
+                  fontFamily="'Inter', sans-serif"
                   fontSize="11"
                   fontWeight="700"
                   fill={isHovered ? '#10b981' : '#475569'}
@@ -246,7 +246,7 @@ const GlobalPresenceMap = () => {
                 <text
                   x={c.x + 42}
                   y={c.y + 21}
-                  fontFamily="'Outfit', sans-serif"
+                  fontFamily="'Inter', sans-serif"
                   fontSize="11"
                   fontWeight="700"
                   fill={isHovered ? '#10b981' : '#475569'}

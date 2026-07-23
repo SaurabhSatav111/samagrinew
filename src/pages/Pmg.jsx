@@ -21,7 +21,7 @@ const Pmg = () => {
           --radius-sm: 8px;
           background: linear-gradient(135deg, #7e1a12 0%, #000 100%);
           color: var(--text);
-          font-family: 'Outfit', sans-serif;
+          font-family: 'Inter', sans-serif;
         }
 
         /* ── HERO ── */
@@ -91,7 +91,7 @@ const Pmg = () => {
         }
 
         .hero-title-pmg {
-          font-family: 'Outfit', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: clamp(42px, 5.5vw, 72px);
           font-weight: 700;
           line-height: 0.92;
@@ -120,7 +120,7 @@ const Pmg = () => {
         }
         .hero-spec-item-pmg { display: flex; flex-direction: column; gap: 3px; }
         .hero-spec-val-pmg {
-          font-family: 'Outfit', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: 24px; font-weight: 700;
           color: #9ef295;
         }
@@ -135,7 +135,7 @@ const Pmg = () => {
           border: none;
           padding: 14px 32px;
           border-radius: 99px;
-          font-family: 'Outfit', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: 13px; font-weight: 700;
           letter-spacing: 0.12em; text-transform: uppercase;
           cursor: pointer; text-decoration: none;
@@ -160,7 +160,7 @@ const Pmg = () => {
           color: #5c4a3a;
           padding: 12px 30px;
           border-radius: 99px;
-          font-family: 'Outfit', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: 13px; font-weight: 700;
           letter-spacing: 0.12em; text-transform: uppercase;
           cursor: pointer; text-decoration: none;
@@ -185,7 +185,7 @@ const Pmg = () => {
           margin-bottom: 2.5rem;
         }
         .section-title-pmg {
-          font-family: 'Outfit', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: 30px; font-weight: 600;
           letter-spacing: -0.02em;
           color: #ffffff;
@@ -232,7 +232,7 @@ const Pmg = () => {
           margin-bottom: 10px;
         }
         .spec-value-pmg {
-          font-family: 'Outfit', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: 20px; font-weight: 600;
           color: var(--text);
           line-height: 1.3;
@@ -252,7 +252,7 @@ const Pmg = () => {
           align-items: center;
         }
         .story-strip-pmg h2 {
-          font-family: 'Outfit', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: clamp(28px, 3vw, 40px);
           font-weight: 600; color: #fff;
           line-height: 1.2; letter-spacing: -0.02em;
@@ -270,7 +270,7 @@ const Pmg = () => {
           display: flex; align-items: flex-start; gap: 1rem;
         }
         .fact-num-pmg {
-          font-family: 'Outfit', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: 32px; font-weight: 700;
           color: #FAC775;
           line-height: 1;
@@ -308,7 +308,7 @@ const Pmg = () => {
           margin-bottom: 1rem;
         }
         .feature-card-pmg h3 {
-          font-family: 'Outfit', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: 17px; font-weight: 600;
           color: var(--text);
           margin-bottom: 8px;

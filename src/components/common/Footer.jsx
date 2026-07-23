@@ -10,7 +10,7 @@ const Footer = () => {
             border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
       `}</style>
-      <footer className="glass-footer text-white pt-10 md:pt-14 pb-8 px-6 md:px-12 mt-0 font-sans relative z-10" style={{ fontFamily: "'Outfit', sans-serif" }}>
+      <footer className="glass-footer text-white pt-10 md:pt-14 pb-8 px-6 md:px-12 mt-0 font-sans relative z-10" style={{ fontFamily: "'Inter', sans-serif" }}>
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12">
               <div className="col-span-1 md:col-span-2">
                   <div className="mb-6">

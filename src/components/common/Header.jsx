@@ -58,7 +58,7 @@ const Header = () => {
             transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
             background: transparent;
             backdrop-filter: blur(0px);
-            font-family: 'Outfit', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
         .navbar-h.product-page {
@@ -270,7 +270,7 @@ const Header = () => {
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.15em;
-            font-family: 'Outfit', sans-serif;
+            font-family: 'Inter', sans-serif;
             transition: color 0.3s ease;
         }
 
