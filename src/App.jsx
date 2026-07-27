@@ -9,6 +9,7 @@ import AboutUs from './pages/AboutUs'
 import Sustainability from './pages/Sustainability'
 import Locations from './pages/Locations'
 import Advantage from './pages/Advantage'
+import FontPreviewPanel from './components/FontPreviewPanel'
 
 // Import all ported pages
 import Avocado from './pages/Avocado'
@@ -94,6 +95,7 @@ function App() {
           <Route path="/product/:id" element={<ProductDetail />} />
         </Routes>
         <Footer />
+        <FontPreviewPanel />
       </div>
     </Router>
   )
